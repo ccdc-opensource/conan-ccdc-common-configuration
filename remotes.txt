@@ -1,0 +1,1 @@
+ccdc-3rdparty-conan-mix https://artifactory.ccdc.cam.ac.uk/artifactory/api/conan/ccdc-3rdparty-conan-mix True
