@@ -1,20 +1,23 @@
-# Introduction 
-TODO: Give a short introduction of your project. Let this section explain the objectives or the motivation behind this project. 
+# Conan Config
 
-# Getting Started
-TODO: Guide users through getting your code up and running on their own system. In this section you can talk about:
-1.	Installation process
-2.	Software dependencies
-3.	Latest releases
-4.	API references
+A general Conan configuration for CCDC packages
 
-# Build and Test
-TODO: Describe and show how to build your code and run the tests. 
+### Introduction
 
-# Contribute
-TODO: Explain how other users and developers can contribute to make your code better. 
+[Conan config](https://docs.conan.io/en/latest/reference/commands/consumer/config.html) provides the option to distribute and share remotes, profiles, settings.
 
-If you want to learn more about creating good readme files then refer the following [guidelines](https://docs.microsoft.com/en-us/azure/devops/repos/git/create-a-readme?view=azure-devops). You can also seek inspiration from the below readme files:
-- [ASP.NET Core](https://github.com/aspnet/Home)
-- [Visual Studio Code](https://github.com/Microsoft/vscode)
-- [Chakra Core](https://github.com/Microsoft/ChakraCore)
+[[Webinar] Developing C/C++ packages with Conan: new features](https://youtu.be/Aey_O86mSfg)
+
+### install
+
+To apply this template in your current environment:
+
+    $ conan config install https://ccdc@dev.azure.com/ccdc/ccdc-3rd-party/_git/conan-3rd-party-configuration
+
+or
+
+    $ conan config install git@ssh.dev.azure.com:v3/ccdc/ccdc-3rd-party/conan-3rd-party-configuration
+
+Git branches can be installed with
+
+    $ conan config install git@ssh.dev.azure.com:v3/ccdc/ccdc-3rd-party/conan-3rd-party-configuration --args "-b tag"
