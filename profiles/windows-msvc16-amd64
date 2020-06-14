@@ -1,12 +1,12 @@
 include(default)
-# This profile is used for building on Windows, with visual studio 2017
+# This profile is used for building on Windows, with visual studio 2019
 [settings]
 arch=x86_64
 arch_build=x86_64
 compiler=Visual Studio
 compiler.runtime=MD
-compiler.version=15
-compiler.toolset=v141
+compiler.version=16
+compiler.toolset=v142
 os=Windows
 os_build=Windows
 
