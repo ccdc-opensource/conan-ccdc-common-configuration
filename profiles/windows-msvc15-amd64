@@ -1,4 +1,6 @@
 include(default)
+include(common-default-options)
+
 # This profile is used for building on Windows, with visual studio 2017
 [settings]
 arch=x86_64

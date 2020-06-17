@@ -1,0 +1,20 @@
+# This profile is used for setting common options that are used by C++ software
+[settings]
+[options]
+
+# This helps debugging queries at the cost of some extra space
+ccdcsqlite3.enable_explain_comments=True
+# We use fts for text search
+ccdcsqlite3.enable_fts3=True
+ccdcsqlite3.enable_fts4=True
+ccdcsqlite3.enable_fts5=True
+ccdcsqlite3.enable_json1=True
+# enable_null_trim reduces the size of tables with lots of empty rows, like element presence counts
+ccdcsqlite3.enable_null_trim=True
+# Unsure why we use this.
+ccdcsqlite3.max_column=10000
+# We use dlls, not static libs for sqlite
+ccdcsqlite3.shared=True
+
+[build_requires]
+[env]

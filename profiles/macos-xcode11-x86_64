@@ -1,4 +1,6 @@
 include(default)
+include(common-default-options)
+
 # This profile is used for building on MacOs
 [settings]
 arch=x86_64
