@@ -18,5 +18,9 @@ ccdcsqlite3:shared=True
 # We use shared library versions of LexActivatot
 lexactivator:shared=True
 
+# Enable zlib compression in protobuf
+protobuf:with_zlib=True
+# Use dynamic libraries for protobuf
+protobuf:shared=True
 [build_requires]
 [env]
