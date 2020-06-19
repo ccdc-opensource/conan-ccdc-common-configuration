@@ -22,5 +22,7 @@ lexactivator:shared=True
 protobuf:with_zlib=True
 # Use dynamic libraries for protobuf
 protobuf:shared=True
+# Our use of test libraries requires using a shared library version of googletest
+gtest:shared=True
 [build_requires]
 [env]
