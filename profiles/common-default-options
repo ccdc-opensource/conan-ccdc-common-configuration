@@ -1,6 +1,18 @@
 # This profile is used for setting common options that are used by C++ software
 [settings]
 [options]
+# Use dynamic libraries in general
+ccdcsqlite3:shared=True
+lexactivator:shared=True
+protobuf:shared=True
+libpng:shared=True
+libjpeg:shared=True
+libxl:shared=True
+bzip2:shared=True
+freetype:shared=True
+libxml2:shared=True
+# Our use of test libraries requires using a shared library version of googletest
+gtest:shared=True
 
 # This helps debugging queries at the cost of some extra space
 ccdcsqlite3:enable_explain_comments=True
@@ -13,29 +25,9 @@ ccdcsqlite3:enable_json1=True
 ccdcsqlite3:enable_null_trim=True
 # Unsure why we use this.
 ccdcsqlite3:max_column=10000
-# We use dlls, not static libs for sqlite
-ccdcsqlite3:shared=True
-# We use shared library versions of LexActivatot
-lexactivator:shared=True
 
 # Enable zlib compression in protobuf
 protobuf:with_zlib=True
-# Use dynamic libraries for protobuf
-protobuf:shared=True
-# Our use of test libraries requires using a shared library version of googletest
-gtest:shared=True
-
-# Use dynamic libraries for libpng
-libpng:shared=True
-# Use dynamic libraries for libjpeg
-libjpeg:shared=True
-
-# Use dynamic libraries for libxl
-libxl:shared=True
-# Use dynamic libraries for bzip2
-bzip2:shared=True
-# Use dynamic libraries for freetype
-freetype:shared=True
 
 [build_requires]
 [env]
