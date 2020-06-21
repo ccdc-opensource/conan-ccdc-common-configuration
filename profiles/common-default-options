@@ -13,6 +13,7 @@ libjpeg:shared=True
 libpng:shared=True
 libtiff:shared=True
 libxl:shared=True
+libwebp:shared=True
 libxml2:shared=True
 protobuf:shared=True
 xz_utils:shared=True
