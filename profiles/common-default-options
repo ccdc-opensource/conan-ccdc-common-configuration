@@ -16,6 +16,7 @@ libxl:shared=True
 libxml2:shared=True
 protobuf:shared=True
 xz_utils:shared=True
+zlib:shared=True
 zstd:shared=True
 # Our use of test libraries requires using a shared library version of googletest
 gtest:shared=True
