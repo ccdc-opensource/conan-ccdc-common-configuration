@@ -12,6 +12,8 @@ os=Windows
 os_build=Windows
 
 [options]
+libcurl:with_openssl=False
+libcurl:with_winssl=True
 
 [build_requires]
 

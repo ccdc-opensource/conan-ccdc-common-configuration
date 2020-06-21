@@ -15,6 +15,8 @@ os.version=10.13
 os_build=Macos
 
 [options]
+libcurl:with_openssl=False
+libcurl:darwin_ssl=True
 
 [build_requires]
 
