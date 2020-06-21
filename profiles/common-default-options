@@ -29,5 +29,8 @@ gtest:shared=True
 libpng:shared=True
 # Use dynamic libraries for libxl
 libxl:shared=True
+# Use dynamic libraries for bzip2
+bzip2:shared=True
+
 [build_requires]
 [env]
