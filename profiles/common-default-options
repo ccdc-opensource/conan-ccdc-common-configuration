@@ -7,6 +7,7 @@ lexactivator:shared=True
 protobuf:shared=True
 libpng:shared=True
 libjpeg:shared=True
+libpng:shared=True
 libxl:shared=True
 bzip2:shared=True
 freetype:shared=True
