@@ -25,6 +25,8 @@ protobuf:shared=True
 # Our use of test libraries requires using a shared library version of googletest
 gtest:shared=True
 
+# Use dynamic libraries for libpng
+libpng:shared=True
 # Use dynamic libraries for libxl
 libxl:shared=True
 [build_requires]
