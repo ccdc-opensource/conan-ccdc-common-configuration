@@ -2,18 +2,18 @@
 [settings]
 [options]
 # Use dynamic libraries in general
+bzip2:shared=True
 ccdcsqlite3:shared=True
+freetype:shared=True
 lexactivator:shared=True
-protobuf:shared=True
-libpng:shared=True
+libcurl:shared=True
+libiconv:shared=True
 libjpeg:shared=True
 libpng:shared=True
+libtiff:shared=True
 libxl:shared=True
-bzip2:shared=True
-freetype:shared=True
-libiconv:shared=True
 libxml2:shared=True
-libcurl:shared=True
+protobuf:shared=True
 # Our use of test libraries requires using a shared library version of googletest
 gtest:shared=True
 
