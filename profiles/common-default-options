@@ -27,6 +27,9 @@ gtest:shared=True
 
 # Use dynamic libraries for libpng
 libpng:shared=True
+# Use dynamic libraries for libjpeg
+libjpeg:shared=True
+
 # Use dynamic libraries for libxl
 libxl:shared=True
 # Use dynamic libraries for bzip2
