@@ -12,6 +12,7 @@ bzip2:shared=True
 freetype:shared=True
 libiconv:shared=True
 libxml2:shared=True
+libcurl:shared=True
 # Our use of test libraries requires using a shared library version of googletest
 gtest:shared=True
 
