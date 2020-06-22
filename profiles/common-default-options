@@ -29,6 +29,10 @@ zstd:shared=True
 # Our use of test libraries requires using a shared library version of googletest
 gtest:shared=True
 
+# Keep some libraries in Release mode only
+libtool:build_type=Release
+libiconv:build_type=Release
+
 # This helps debugging queries at the cost of some extra space
 ccdcsqlite3:enable_explain_comments=True
 # We use fts for text search
