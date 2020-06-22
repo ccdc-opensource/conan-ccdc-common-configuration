@@ -5,6 +5,7 @@
 bzip2:shared=True
 ccdcsqlite3:shared=True
 freetype:shared=True
+jasper:shared=True
 jbig:shared=True
 lexactivator:shared=True
 libcurl:shared=True
@@ -12,8 +13,8 @@ libiconv:shared=True
 libjpeg:shared=True
 libpng:shared=True
 libtiff:shared=True
-libxl:shared=True
 libwebp:shared=True
+libxl:shared=True
 libxml2:shared=True
 openssl:shared=True
 protobuf:shared=True
