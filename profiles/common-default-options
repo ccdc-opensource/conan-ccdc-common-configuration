@@ -3,6 +3,7 @@
 [options]
 # Use dynamic libraries in general
 bzip2:shared=True
+cairo:shared=True
 ccdcsqlite3:shared=True
 freetype:shared=True
 jasper:shared=True
@@ -16,6 +17,7 @@ libtiff:shared=True
 libwebp:shared=True
 libxl:shared=True
 libxml2:shared=True
+openscenegraph:shared=True
 openssl:shared=True
 protobuf:shared=True
 xz_utils:shared=True
@@ -38,6 +40,14 @@ ccdcsqlite3:max_column=10000
 
 # Enable zlib compression in protobuf
 protobuf:with_zlib=True
+
+# Cairo configuration
+cairo:enable_ft=True # Use freetype
+cairo:enable_fc=True # Use fontconfig
+cairo:enable_xlib=False # Disable dependency on X Window System if possible
+cairo:enable_xlib_xrender=False
+cairo:enable_xcb=False
+cairo:enable_glib=False # Disable glib unless required
 
 [build_requires]
 [env]
