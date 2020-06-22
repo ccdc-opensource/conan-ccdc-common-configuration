@@ -15,6 +15,7 @@ libtiff:shared=True
 libxl:shared=True
 libwebp:shared=True
 libxml2:shared=True
+openssl:shared=True
 protobuf:shared=True
 xz_utils:shared=True
 zlib:shared=True
