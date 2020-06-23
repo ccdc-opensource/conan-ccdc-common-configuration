@@ -11,6 +11,7 @@ compiler.version=10
 os=Linux
 os_build=Linux
 os.distro=Debian
+os_build.distro=Debian
 
 [options]
 
