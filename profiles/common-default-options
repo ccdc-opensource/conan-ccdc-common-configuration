@@ -6,6 +6,10 @@ libtool:build_type=Release
 libiconv:build_type=Release
 
 [options]
+# Packages using this library like autoconf are having trouble
+# finding it when running in autotools. This is not an issue as
+# we do not link the libraries.
+libiconv:shared=False
 
 # Use dynamic libraries in general
 bzip2:shared=True
@@ -18,7 +22,6 @@ jasper:shared=True
 jbig:shared=True
 lexactivator:shared=True
 libcurl:shared=True
-libiconv:shared=True
 libjpeg:shared=True
 libpng:shared=True
 libtiff:shared=True
