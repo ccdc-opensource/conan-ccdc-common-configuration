@@ -3,7 +3,6 @@
 
 # Keep some libraries in Release mode only
 libtool:build_type=Release
-libiconv:build_type=Release
 
 [options]
 # Packages using this library like autoconf are having trouble
