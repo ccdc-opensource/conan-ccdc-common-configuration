@@ -11,7 +11,6 @@ compiler.version=9
 os=Linux
 os_build=Linux
 os.distro=CentOS
-os_build.distro=CentOS
 
 [options]
 
