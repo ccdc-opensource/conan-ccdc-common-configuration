@@ -55,12 +55,6 @@ protobuf:with_zlib=True
 # Cairo configuration
 # Use freetype
 cairo:enable_ft=True
-# Use fontconfig
-cairo:enable_fc=True
-# Disable dependency on X Window System if possible
-cairo:enable_xlib=False
-cairo:enable_xlib_xrender=False
-cairo:enable_xcb=False
 # Disable glib unless required
 cairo:enable_glib=False
 

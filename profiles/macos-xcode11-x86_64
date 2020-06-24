@@ -17,6 +17,8 @@ os_build=Macos
 [options]
 libcurl:with_openssl=False
 libcurl:darwin_ssl=True
+# Use fontconfig
+cairo:enable_fc=True
 
 # We prefer using static libraries for these packages on macos
 bzip2:shared=False

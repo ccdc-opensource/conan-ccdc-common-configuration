@@ -13,6 +13,12 @@ os_build=Linux
 os.distro=CentOS
 
 [options]
+# Use fontconfig
+cairo:enable_fc=True
+# Disable dependency on X Window System if possible
+cairo:enable_xlib=False
+cairo:enable_xlib_xrender=False
+cairo:enable_xcb=False
 
 [build_requires]
 
