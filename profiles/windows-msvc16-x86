@@ -1,0 +1,20 @@
+include(default)
+include(common-default-options)
+
+# This profile is used for building on Windows, with visual studio 2019
+[settings]
+arch=x86
+arch_build=x86
+compiler=Visual Studio
+compiler.version=16
+compiler.toolset=v142
+os=Windows
+os_build=Windows
+
+[options]
+libcurl:with_openssl=False
+libcurl:with_winssl=True
+
+[build_requires]
+
+[env]
