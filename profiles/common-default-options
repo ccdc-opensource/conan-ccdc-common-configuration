@@ -53,12 +53,16 @@ ccdcsqlite3:max_column=10000
 protobuf:with_zlib=True
 
 # Cairo configuration
-cairo:enable_ft=True # Use freetype
-cairo:enable_fc=True # Use fontconfig
-cairo:enable_xlib=False # Disable dependency on X Window System if possible
+# Use freetype
+cairo:enable_ft=True
+# Use fontconfig
+cairo:enable_fc=True
+# Disable dependency on X Window System if possible
+cairo:enable_xlib=False
 cairo:enable_xlib_xrender=False
 cairo:enable_xcb=False
-cairo:enable_glib=False # Disable glib unless required
+# Disable glib unless required
+cairo:enable_glib=False
 
 [build_requires]
 [env]
