@@ -18,6 +18,14 @@ os_build=Macos
 libcurl:with_openssl=False
 libcurl:darwin_ssl=True
 
+# We prefer using static libraries for these packages on macos
+bzip2:shared=False
+zlib:shared=False
+expat:shared=False
+fontconfig:shared=False
+freetype:shared=False
+libpng:shared=False
+
 [build_requires]
 
 [env]
