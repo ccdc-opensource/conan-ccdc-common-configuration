@@ -60,5 +60,8 @@ cairo:enable_ft=True
 # Disable glib unless required
 cairo:enable_glib=False
 
+# Header only boost version
+boost:header_only=True
+
 [build_requires]
 [env]
