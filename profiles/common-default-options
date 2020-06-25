@@ -13,6 +13,7 @@ libtool:build_type=Release
 libiconv:shared=False
 freetype:shared=False
 fontconfig:shared=False
+libpng:shared=False
 
 # Use dynamic libraries in general
 bzip2:shared=True
@@ -24,7 +25,6 @@ jbig:shared=True
 lexactivator:shared=True
 libcurl:shared=True
 libjpeg:shared=True
-libpng:shared=True
 libtiff:shared=True
 libuuid:shared=True
 libwebp:shared=True
