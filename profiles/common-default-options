@@ -19,7 +19,6 @@ bzip2:shared=True
 cairo:shared=True
 ccdcsqlite3:shared=True
 expat:shared=True
-fontconfig:shared=True
 jasper:shared=True
 jbig:shared=True
 lexactivator:shared=True
