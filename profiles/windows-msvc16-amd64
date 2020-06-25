@@ -10,6 +10,9 @@ compiler.version=16
 compiler.toolset=v142
 os=Windows
 os_build=Windows
+libtool:compiler=Visual Studio
+libtool:compiler.version=16
+libtool:compiler.toolset=v142
 
 [options]
 libcurl:with_openssl=False

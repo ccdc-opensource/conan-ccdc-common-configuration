@@ -5,6 +5,7 @@ include(windows-msvc16-amd64)
 
 [settings]
 compiler.runtime=MT
+libtool:compiler.runtime=MT
 
 [options]
 

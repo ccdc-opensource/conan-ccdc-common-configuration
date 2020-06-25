@@ -6,6 +6,7 @@ include(windows-msvc15-x86)
 [settings]
 compiler.runtime=MT
 libtool:compiler.runtime=MT
+
 [options]
 
 [build_requires]
