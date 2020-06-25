@@ -5,17 +5,19 @@
 libtool:build_type=Release
 
 [options]
-# Packages using this library like autoconf are having trouble
-# finding it when running in autotools. This is not an issue as
-# we do not link the libraries.
+# Packages using these libraries like autoconf are having trouble
+# finding them when running in autotools. 
+# This list must be vetted so that:
+# - we don't use static versions of LGPL libraries in our programs
+# - with the caveat that static versions of GPL and LGPL libraries can be used inside tools we use during the build
 libiconv:shared=False
+freetype:shared=False
 
 # Use dynamic libraries in general
 bzip2:shared=True
 cairo:shared=True
 ccdcsqlite3:shared=True
 expat:shared=True
-freetype:shared=True
 fontconfig:shared=True
 jasper:shared=True
 jbig:shared=True
