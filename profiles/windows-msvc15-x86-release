@@ -4,8 +4,8 @@ include(common-default-options)
 include(windows-msvc15-x86)
 
 [settings]
-compiler.runtime=MT
-libtool:compiler.runtime=MT
+compiler.runtime=MD
+libtool:compiler.runtime=MD
 
 [options]
 
