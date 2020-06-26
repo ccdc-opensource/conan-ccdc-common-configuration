@@ -8,6 +8,8 @@ arch_build=x86_64
 compiler=apple-clang
 compiler.libcxx=libc++
 compiler.version=11.0
+compiler.cppstd=17
+
 povray:compiler=apple-clang
 povray:compiler.libcxx=libc++
 povray:compiler.version=11.0
