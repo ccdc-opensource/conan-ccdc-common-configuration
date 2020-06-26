@@ -10,10 +10,17 @@ compiler.libcxx=libc++
 compiler.version=11.0
 compiler.cppstd=17
 
+# povray's autotools can't configure boost in a way that works, switching to C++11
 povray:compiler=apple-clang
 povray:compiler.libcxx=libc++
 povray:compiler.version=11.0
 povray:compiler.cppstd=11
+
+# gperf uses the register storage class specifier, which was removed in C++17
+gperf:compiler=apple-clang
+gperf:compiler.libcxx=libc++
+gperf:compiler.version=11.0
+gperf:compiler.cppstd=14
 
 os=Macos
 # This is the minimum supported version, it should feed into the builds with the -mmacosx-version-min command line argument
