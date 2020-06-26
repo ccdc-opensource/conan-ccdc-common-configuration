@@ -15,6 +15,9 @@ os_build=Windows
 libtool:compiler=Visual Studio
 libtool:compiler.version=16
 libtool:compiler.toolset=v142
+ninja:compiler=Visual Studio
+ninja:compiler.version=16
+ninja:compiler.toolset=v142
 
 [options]
 libcurl:with_openssl=False

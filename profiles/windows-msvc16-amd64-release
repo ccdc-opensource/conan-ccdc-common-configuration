@@ -6,6 +6,8 @@ include(windows-msvc16-amd64)
 [settings]
 compiler.runtime=MD
 libtool:compiler.runtime=MD
+# Ninja only supports the MT runtime
+ninja:compiler.runtime=MT
 
 [options]
 
