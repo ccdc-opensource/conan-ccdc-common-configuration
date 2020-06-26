@@ -12,12 +12,18 @@ compiler.cppstd=17
 
 os=Windows
 os_build=Windows
+
 libtool:compiler=Visual Studio
 libtool:compiler.version=16
 libtool:compiler.toolset=v142
+
+# Ninja compilation is affected by this issue
+# https://developercommunity.visualstudio.com/content/problem/93889/error-c2872-byte-ambiguous-symbol.html
+# Current solution is to back out into C++14
 ninja:compiler=Visual Studio
 ninja:compiler.version=16
 ninja:compiler.toolset=v142
+ninja:compiler.cppstd=14
 
 [options]
 libcurl:with_openssl=False
