@@ -5,16 +5,25 @@ include(common-default-options)
 [settings]
 arch=x86_64
 arch_build=x86_64
+
+os=Windows
+os_build=Windows
+
 compiler=Visual Studio
 compiler.version=15
 compiler.toolset=v141
 compiler.cppstd=17
 
-os=Windows
-os_build=Windows
+# libtool 
 libtool:compiler=Visual Studio
 libtool:compiler.version=15
 libtool:compiler.toolset=v141
+
+# openscenegraph uses mem_fun_ref, which was removed in C++17
+openscenegraph:compiler=Visual Studio
+openscenegraph:compiler.version=15
+openscenegraph:compiler.toolset=v141
+openscenegraph:compiler.cppstd=14
 
 [options]
 libcurl:with_openssl=False

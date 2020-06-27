@@ -5,14 +5,15 @@ include(common-default-options)
 [settings]
 arch=x86_64
 arch_build=x86_64
-compiler=gcc
-compiler.version=10
-compiler.libcxx=libstdc++11
-compiler.cppstd=17
 
 os=Windows
 os.subsystem=msys2
 os_build=Windows
+
+compiler=gcc
+compiler.version=10
+compiler.libcxx=libstdc++11
+compiler.cppstd=17
 
 [options]
 

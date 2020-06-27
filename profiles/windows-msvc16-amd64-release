@@ -8,6 +8,7 @@ compiler.runtime=MD
 libtool:compiler.runtime=MD
 # Ninja only supports the MT runtime
 ninja:compiler.runtime=MT
+openscenegraph:compiler.runtime=MD
 
 [options]
 

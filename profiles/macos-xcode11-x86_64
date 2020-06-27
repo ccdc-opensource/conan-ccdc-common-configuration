@@ -5,6 +5,12 @@ include(common-default-options)
 [settings]
 arch=x86_64
 arch_build=x86_64
+os=Macos
+# This is the minimum supported version, it should feed into the builds with the -mmacosx-version-min command line argument
+# See https://github.com/conan-io/conan/issues/2534
+os.version=10.13
+os_build=Macos
+
 compiler=apple-clang
 compiler.libcxx=libc++
 compiler.version=11.0
@@ -22,11 +28,11 @@ gperf:compiler.libcxx=libc++
 gperf:compiler.version=11.0
 gperf:compiler.cppstd=14
 
-os=Macos
-# This is the minimum supported version, it should feed into the builds with the -mmacosx-version-min command line argument
-# See https://github.com/conan-io/conan/issues/2534
-os.version=10.13
-os_build=Macos
+# openscenegraph uses mem_fun_ref, which was removed in C++17
+openscenegraph:compiler=apple-clang
+openscenegraph:compiler.libcxx=libc++
+openscenegraph:compiler.version=11.0
+openscenegraph:compiler.cppstd=14
 
 [options]
 libcurl:with_openssl=False

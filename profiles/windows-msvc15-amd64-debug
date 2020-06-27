@@ -6,6 +6,7 @@ include(windows-msvc15-amd64)
 [settings]
 compiler.runtime=MDd
 libtool:compiler.runtime=MD
+openscenegraph:compiler.runtime=MDd
 
 [options]
 
