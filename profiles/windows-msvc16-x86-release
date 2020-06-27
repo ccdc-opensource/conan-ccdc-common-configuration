@@ -6,6 +6,7 @@ include(windows-msvc16-x86)
 [settings]
 compiler.runtime=MD
 openscenegraph:compiler.runtime=MD
+libxl:compiler.runtime=MD
 
 [options]
 

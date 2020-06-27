@@ -24,6 +24,12 @@ openscenegraph:compiler.version=15
 openscenegraph:compiler.toolset=v141
 openscenegraph:compiler.cppstd=14
 
+# libxl uses auto_ptr internally, which was removed in C++17
+libxl:compiler=Visual Studio
+libxl:compiler.version=15
+libxl:compiler.toolset=v141
+libxl:compiler.cppstd=14
+
 [options]
 libcurl:with_openssl=False
 libcurl:with_winssl=True

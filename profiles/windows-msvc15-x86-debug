@@ -7,6 +7,7 @@ include(windows-msvc15-x86)
 compiler.runtime=MDd
 libtool:compiler.runtime=MD
 openscenegraph:compiler.runtime=MDd
+libxl:compiler.runtime=MDd
 
 [options]
 

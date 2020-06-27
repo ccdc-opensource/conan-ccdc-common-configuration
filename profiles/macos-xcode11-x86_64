@@ -34,6 +34,12 @@ openscenegraph:compiler.libcxx=libc++
 openscenegraph:compiler.version=11.0
 openscenegraph:compiler.cppstd=14
 
+# libxl uses auto_ptr internally, which was removed in C++17
+libxl:compiler=apple-clang
+libxl:compiler.libcxx=libc++
+libxl:compiler.version=11.0
+libxl:compiler.cppstd=14
+
 [options]
 libcurl:with_openssl=False
 libcurl:darwin_ssl=True
