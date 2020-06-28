@@ -1,8 +1,26 @@
 # This profile is used for setting common options that are used by C++ software
 [settings]
 
-# Keep some libraries in Release mode only
+# Use tools in Release mode only
+7zip:build_type=Release
+autoconf:build_type=Release
+automake:build_type=Release
+b2:build_type=Release
+bison:build_type=Release
+cmake:build_type=Release
+flex:build_type=Release
+installbuilder:build_type=Release
 libtool:build_type=Release
+lzma_sdk:build_type=Release
+m4:build_type=Release
+make:build_type=Release
+msys2:build_type=Release
+nasm:build_type=Release
+ninja:build_type=Release
+rstatistics:build_type=Release
+strawberryperl:build_type=Release
+swig:build_type=Release
+winflexbison:build_type=Release
 
 [options]
 # Packages using these libraries like autoconf are having trouble
