@@ -10,6 +10,7 @@ libtool:compiler.runtime=MD
 ninja:compiler.runtime=MT
 openscenegraph:compiler.runtime=MD
 libxl:compiler.runtime=MD
+cmake:compiler.runtime=MT
 
 [options]
 

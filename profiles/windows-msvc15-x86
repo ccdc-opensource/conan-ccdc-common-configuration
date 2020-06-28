@@ -30,6 +30,11 @@ libxl:compiler.version=15
 libxl:compiler.toolset=v141
 libxl:compiler.cppstd=14
 
+cmake:compiler=Visual Studio
+cmake:compiler.version=15
+cmake:compiler.toolset=v141
+cmake:compiler.cppstd=14
+
 [options]
 libcurl:with_openssl=False
 libcurl:with_winssl=True
