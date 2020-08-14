@@ -40,7 +40,6 @@ ccdcsqlite3:shared=True
 expat:shared=True
 fontconfig:shared=True
 freetype:shared=True
-gsoap:shared=True
 inchi:shared=True
 jasper:shared=True
 jbig:shared=True
