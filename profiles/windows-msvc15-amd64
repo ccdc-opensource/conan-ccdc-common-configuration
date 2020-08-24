@@ -19,6 +19,10 @@ libtool:compiler=Visual Studio
 libtool:compiler.version=15
 libtool:compiler.toolset=v141
 
+winflexbison:compiler=Visual Studio
+winflexbison:compiler.version=15
+winflexbison:compiler.toolset=v141
+
 # openscenegraph uses mem_fun_ref, which was removed in C++17
 openscenegraph:compiler=Visual Studio
 openscenegraph:compiler.version=15

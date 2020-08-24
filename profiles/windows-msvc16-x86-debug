@@ -9,6 +9,7 @@ libtool:compiler.runtime=MD
 openscenegraph:compiler.runtime=MDd
 libxl:compiler.runtime=MDd
 cmake:compiler.runtime=MT
+winflexbison:compiler.runtime=MD
 
 [options]
 
