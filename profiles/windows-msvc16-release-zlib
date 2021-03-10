@@ -4,7 +4,7 @@
 zlib:compiler=Visual Studio
 zlib:compiler.version=16
 zlib:compiler.runtime=MD
-zlib:compiler.build_type=Release
+zlib:build_type=Release
 
 [options]
 
