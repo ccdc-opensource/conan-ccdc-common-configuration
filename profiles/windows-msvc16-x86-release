@@ -4,8 +4,12 @@ include(common-default-options)
 include(windows-msvc16-x86)
 
 [settings]
+# Build everything in release mode
 compiler.runtime=MD
 openscenegraph:compiler.runtime=MD
+
+# Use release version of tooling
+libtool:compiler.runtime=MD
 libxl:compiler.runtime=MD
 cmake:compiler.runtime=MT
 

@@ -1,7 +1,7 @@
+# This profile is used for building on Windows, with visual studio 2019
 include(default)
 include(common-default-options)
 
-# This profile is used for building on Windows, with visual studio 2019
 [settings]
 arch=x86
 arch_build=x86
@@ -13,6 +13,11 @@ compiler=Visual Studio
 compiler.version=16
 compiler.toolset=v142
 compiler.cppstd=17
+
+# libtool 
+libtool:compiler=Visual Studio
+libtool:compiler.version=16
+libtool:compiler.toolset=v142
 
 winflexbison:compiler=Visual Studio
 winflexbison:compiler.version=16
