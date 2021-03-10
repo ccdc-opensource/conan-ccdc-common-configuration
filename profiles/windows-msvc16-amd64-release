@@ -4,11 +4,12 @@ include(common-default-options)
 include(windows-msvc16-amd64)
 
 [settings]
+# Build everything in release mode
 compiler.runtime=MD
-libtool:compiler.runtime=MD
-# Ninja only supports the MT runtime
-ninja:compiler.runtime=MT
 openscenegraph:compiler.runtime=MD
+
+# Use release version of tooling
+libtool:compiler.runtime=MD
 libxl:compiler.runtime=MD
 cmake:compiler.runtime=MT
 

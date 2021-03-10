@@ -14,6 +14,7 @@ compiler.version=15
 compiler.toolset=v141
 compiler.cppstd=17
 
+# libtool 
 libtool:compiler=Visual Studio
 libtool:compiler.version=15
 libtool:compiler.toolset=v141

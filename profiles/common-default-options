@@ -76,6 +76,10 @@ ccdcsqlite3:max_column=10000
 # Enable zlib compression in protobuf
 protobuf:with_zlib=True
 
+# Fix crash when two libraries using csdprotobufs are linked together
+# https://stackoverflow.com/questions/37051635/several-shared-object-using-same-proto-leading-the-the-error-file-already-exist
+csdprotobufs:shared=True
+
 # Cairo configuration
 # Use freetype
 cairo:enable_ft=True
