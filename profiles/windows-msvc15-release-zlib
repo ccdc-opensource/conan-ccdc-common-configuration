@@ -1,0 +1,13 @@
+# This profile is an add-on, to use a release version of zlib on debug builds
+
+[settings]
+zlib:compiler=Visual Studio
+zlib:compiler.version=15
+zlib:compiler.runtime=MD
+zlib:compiler.build_type=Release
+
+[options]
+
+[build_requires]
+
+[env]
