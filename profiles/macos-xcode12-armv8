@@ -3,8 +3,9 @@ include(common-default-options)
 
 # This profile is used for building on MacOs
 [settings]
-arch=armv8.3
-arch_build=armv8.3
+# The choice of armv8 is deliberate. Ninja build crashes if 8.3 is used
+arch=armv8
+arch_build=armv8
 os=Macos
 # This is the minimum supported version, it should feed into the builds with the -mmacosx-version-min command line argument
 # See https://github.com/conan-io/conan/issues/2534
