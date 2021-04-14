@@ -60,6 +60,7 @@ zlib:shared=True
 zstd:shared=True
 # Our use of test libraries requires using a shared library version of googletest
 gtest:shared=True
+libarchive:shared=True
 
 # This helps debugging queries at the cost of some extra space
 ccdcsqlite3:enable_explain_comments=True
@@ -88,6 +89,11 @@ cairo:enable_glib=False
 
 # Header only boost version
 boost:header_only=True
+
+# Enable compression libraries for libarchive
+libarchive:with_zlib=True
+libarchive:with_bzip2=True
+libarchive:with_zstd=True
 
 [build_requires]
 [env]
