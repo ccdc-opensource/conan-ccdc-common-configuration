@@ -83,9 +83,9 @@ csdprotobufs:shared=True
 
 # Cairo configuration
 # Use freetype
-cairo:enable_ft=True
+cairo:with_freetype=True
 # Disable glib unless required
-cairo:enable_glib=False
+cairo:with_glib=False
 
 # Header only boost version
 boost:header_only=True

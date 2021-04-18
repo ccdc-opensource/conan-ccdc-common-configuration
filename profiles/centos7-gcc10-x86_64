@@ -30,11 +30,11 @@ libxl:compiler.cppstd=14
 
 [options]
 # Use fontconfig
-cairo:enable_fc=True
+cairo:with_fontconfig=True
 # Disable dependency on X Window System if possible
-cairo:enable_xlib=False
-cairo:enable_xlib_xrender=False
-cairo:enable_xcb=False
+cairo:with_xlib=False
+cairo:with_xlib_xrender=False
+cairo:with_xcb=False
 
 [build_requires]
 

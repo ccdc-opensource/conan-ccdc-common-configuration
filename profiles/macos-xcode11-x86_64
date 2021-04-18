@@ -48,7 +48,7 @@ libxl:compiler.cppstd=14
 libcurl:with_openssl=False
 libcurl:darwin_ssl=True
 # Use fontconfig
-cairo:enable_fc=True
+cairo:with_fontconfig=True
 
 # We prefer using static libraries for these packages on macos
 bzip2:shared=False
