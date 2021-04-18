@@ -95,5 +95,8 @@ libarchive:with_zlib=True
 libarchive:with_bzip2=True
 libarchive:with_zstd=True
 
+# Disable i18n in fontconfig (depends on GPL3-licensed libgettext)
+fontconfig:with_nls=False
+
 [build_requires]
 [env]
