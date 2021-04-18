@@ -38,7 +38,6 @@ bzip2:shared=True
 cairo:shared=True
 ccdcsqlite3:shared=True
 expat:shared=True
-fontconfig:shared=True
 freetype:shared=True
 inchi:shared=True
 jasper:shared=True
