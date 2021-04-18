@@ -51,6 +51,8 @@ cmake:compiler.cppstd=14
 [options]
 libcurl:with_openssl=False
 libcurl:with_winssl=True
+# Disable glib unless required
+cairo:enable_glib=False
 
 [build_requires]
 
