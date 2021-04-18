@@ -28,6 +28,8 @@ libxl:compiler.libcxx=libstdc++11
 libxl:compiler.version=9
 libxl:compiler.cppstd=14
 
+freetype:build_type=Release
+
 [options]
 
 # Cairo configuration
