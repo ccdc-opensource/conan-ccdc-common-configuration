@@ -32,15 +32,15 @@ libxl:compiler.cppstd=14
 
 # Cairo configuration
 # Disable glib unless required
-cairo:with_glib=False
+cairo:enable_glib=False
 # Use freetype
-cairo:with_freetype=True
+cairo:enable_ft=True
 # Use fontconfig
-cairo:with_fontconfig=True
+cairo:enable_fc=True
 # Disable dependency on X Window System if possible
-cairo:with_xlib=False
-cairo:with_xlib_xrender=False
-cairo:with_xcb=False
+cairo:enable_xlib=False
+cairo:enable_xlib_xrender=False
+cairo:enable_xcb=False
 
 [build_requires]
 
