@@ -28,6 +28,11 @@ libxl:compiler.libcxx=libstdc++11
 libxl:compiler.version=10
 libxl:compiler.cppstd=14
 
+# Cairo configuration
+# Disable glib unless required
+cairo:with_glib=False
+# Use freetype
+cairo:with_freetype=True
 # Use fontconfig
 cairo:with_fontconfig=True
 # Disable dependency on X Window System if possible

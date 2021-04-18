@@ -81,12 +81,6 @@ protobuf:with_zlib=True
 # https://stackoverflow.com/questions/37051635/several-shared-object-using-same-proto-leading-the-the-error-file-already-exist
 csdprotobufs:shared=True
 
-# Cairo configuration
-# Use freetype
-cairo:with_freetype=True
-# Disable glib unless required
-cairo:with_glib=False
-
 # Header only boost version
 boost:header_only=True
 
