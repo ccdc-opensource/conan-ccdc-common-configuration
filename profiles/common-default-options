@@ -30,7 +30,6 @@ winflexbison:build_type=Release
 # - with the caveat that static versions of GPL and LGPL libraries can be used inside tools we use during the build
 libiconv:shared=False
 freetype:shared=False
-fontconfig:shared=False
 libpng:shared=False
 
 # Use dynamic libraries in general
@@ -38,6 +37,7 @@ bzip2:shared=True
 cairo:shared=True
 ccdcsqlite3:shared=True
 expat:shared=True
+fontconfig:shared=True
 freetype:shared=True
 inchi:shared=True
 jasper:shared=True
