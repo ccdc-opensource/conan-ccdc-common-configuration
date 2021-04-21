@@ -57,12 +57,9 @@ cairo:enable_ft=True
 cairo:enable_fc=True
 
 # We prefer using static libraries for these packages on macos
-bzip2:shared=False
-zlib:shared=False
+# Expat is used by the ImageIO.framework. ImageIO is used by openscenegraph
+# ideally we should be able to use the system version on macos... but...
 expat:shared=False
-fontconfig:shared=False
-freetype:shared=False
-libpng:shared=False
 
 [build_requires]
 
