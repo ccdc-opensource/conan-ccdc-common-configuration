@@ -28,6 +28,7 @@ libxl:compiler.libcxx=libstdc++11
 libxl:compiler.version=10
 libxl:compiler.cppstd=14
 
+[options]
 # Cairo configuration
 # Disable glib unless required
 cairo:enable_glib=False
