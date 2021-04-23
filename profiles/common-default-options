@@ -51,6 +51,7 @@ libuuid:shared=True
 libwebp:shared=True
 libxl:shared=True
 libxml2:shared=True
+mariadb-connector-c:shared=True
 openscenegraph:shared=True
 openssl:shared=True
 protobuf:shared=True
