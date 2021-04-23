@@ -14,6 +14,7 @@ libxl:compiler.runtime=MDd
 libtool:compiler.runtime=MD
 cmake:compiler.runtime=MT
 winflexbison:compiler.runtime=MD
+swig:compiler.runtime=MD
 
 [options]
 

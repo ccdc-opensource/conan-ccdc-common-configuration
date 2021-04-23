@@ -23,6 +23,10 @@ winflexbison:compiler=Visual Studio
 winflexbison:compiler.version=16
 winflexbison:compiler.toolset=v142
 
+swig:compiler=Visual Studio
+swig:compiler.version=16
+swig:compiler.toolset=v142
+
 # Ninja compilation is affected by this issue
 # https://developercommunity.visualstudio.com/content/problem/93889/error-c2872-byte-ambiguous-symbol.html
 # Current solution is to back out into C++14

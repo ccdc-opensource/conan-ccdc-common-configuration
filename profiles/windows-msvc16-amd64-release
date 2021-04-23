@@ -12,6 +12,7 @@ openscenegraph:compiler.runtime=MD
 libtool:compiler.runtime=MD
 libxl:compiler.runtime=MD
 cmake:compiler.runtime=MT
+swig:compiler.runtime=MD
 
 [options]
 
