@@ -58,7 +58,15 @@ protobuf:shared=True
 xz_utils:shared=True
 zlib:shared=True
 zstd:shared=True
-# Our use of test libraries requires using a shared library version of googletest
+
+# We have some functionality in project test libraries (think mathslib_test) that
+# requires access to singletons in the test infrastructure. This was possible with
+# ccdc's homegrown test toolkit but is no longer easy to do with googletest.
+# Googletest's philosophy is that tests must be entirely defined in the testsuite and
+# no shared libraries should be used when accessing testsuite related data.
+# The way we make things work is that we use shared libraries on linux and macos
+# and static googletest libraries on windows as this is the only way to keep
+# a single copy of the singletons in question
 gtest:shared=True
 libarchive:shared=True
 

@@ -44,6 +44,9 @@ cmake:compiler.cppstd=14
 libcurl:with_openssl=False
 libcurl:with_winssl=True
 
+# See the more extensive comment in common-default-options
+gtest:shared=False
+
 [build_requires]
 
 [env]
