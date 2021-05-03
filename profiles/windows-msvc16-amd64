@@ -52,6 +52,9 @@ cmake:compiler.version=16
 cmake:compiler.toolset=v142
 cmake:compiler.cppstd=14
 
+mariadb-connector-c:compiler=Visual Studio
+mariadb-connector-c:compiler.version=16
+
 [options]
 libcurl:with_openssl=False
 libcurl:with_winssl=True

@@ -21,6 +21,10 @@ libxl:build_type=Release
 openscenegraph:build_type=Release
 pixman:build_type=Release
 
+# Always use release version of mariadb-connector-c
+mariadb-connector-c:compiler.runtime=MD
+mariadb-connector-c:build_type=Release
+
 [options]
 
 [build_requires]

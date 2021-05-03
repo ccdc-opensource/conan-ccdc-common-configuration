@@ -16,6 +16,10 @@ cmake:compiler.runtime=MT
 winflexbison:compiler.runtime=MD
 swig:compiler.runtime=MD
 
+# Always use release version of mariadb-connector-c
+mariadb-connector-c:compiler.runtime=MD
+mariadb-connector-c:build_type=Release
+
 [options]
 
 [build_requires]
