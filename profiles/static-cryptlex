@@ -1,0 +1,9 @@
+# This profile is used for building with static cryptlex libraries
+[settings]
+
+[options]
+lexactivator:shared=False
+lexfloatclient:shared=False
+
+[build_requires]
+[env]
