@@ -88,6 +88,7 @@ protobuf:with_zlib=True
 # Fix crash when two libraries using csdprotobufs are linked together
 # https://stackoverflow.com/questions/37051635/several-shared-object-using-same-proto-leading-the-the-error-file-already-exist
 csdprotobufs:shared=True
+cqlprotobufs:shared=True
 
 # Header only boost version
 boost:header_only=True
