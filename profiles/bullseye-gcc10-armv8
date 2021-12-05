@@ -1,7 +1,7 @@
 include(default)
 include(common-default-options)
 
-# This profile is used to differentiate between Centos7 (older glibc) and ubuntu/debian circa 2018
+# This profile is used for raspberry Pis using debian bullseye (late 2021)
 [settings]
 arch=armv8
 arch_build=armv8
@@ -44,3 +44,5 @@ cairo:enable_xcb=False
 [build_requires]
 
 [env]
+CC=/usr/bin/arm-linux-gnueabihf-gcc-10
+CXX=/usr/bin/arm-linux-gnueabihf-g++-10
