@@ -3,8 +3,8 @@ include(common-default-options)
 
 # This profile is used for raspberry Pis using debian bullseye (late 2021)
 [settings]
-arch=armv8
-arch_build=armv8
+arch=armv7hf
+arch_build=armv7hf
 
 os=Linux
 os_build=Linux
