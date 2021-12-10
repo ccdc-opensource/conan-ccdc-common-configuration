@@ -45,7 +45,7 @@ qt:qtwebview=True
 #required for qtwebengine
 qt:qtdeclarative=True
 # qt:qtquickcontrols2=True
-qt:qtlocation=True
+qt:qtpositioning=True
 qt:qtwebchannel=True
 
 qt:qt3d=True
