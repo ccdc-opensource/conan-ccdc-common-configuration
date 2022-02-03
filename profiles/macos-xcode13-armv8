@@ -1,5 +1,6 @@
 include(default)
 include(common-default-options)
+include(qt5-options-macos)
 
 # This profile is used for building on MacOs
 [settings]
