@@ -1,5 +1,6 @@
 include(default)
 include(common-default-options)
+include(qt5-options-linux)
 
 # This profile is used to differentiate between Centos7 (older glibc) and ubuntu/debian circa 2018
 [settings]
@@ -46,3 +47,5 @@ cairo:enable_xcb=False
 [env]
 CC=/opt/rh/devtoolset-10/root/usr/bin/gcc
 CXX=/opt/rh/devtoolset-10/root/usr/bin/g++
+LD=/opt/rh/devtoolset-10/root/usr/bin/ld
+MAKE=/opt/rh/devtoolset-10/root/usr/bin/make
