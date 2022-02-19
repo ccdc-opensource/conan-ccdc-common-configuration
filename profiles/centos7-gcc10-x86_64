@@ -42,6 +42,11 @@ cairo:enable_xlib=False
 cairo:enable_xlib_xrender=False
 cairo:enable_xcb=False
 
+# Not using selinux support in GIO
+glib:with_selinux=False
+# Not using glib to mount drives
+glib:with_mount=False
+
 [build_requires]
 
 [env]
