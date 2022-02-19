@@ -24,3 +24,5 @@ build_type=Release
 [env]
 CC=/opt/rh/devtoolset-10/root/usr/bin/gcc
 CXX=/opt/rh/devtoolset-10/root/usr/bin/g++
+LD=/opt/rh/devtoolset-10/root/usr/bin/ld
+MAKE=/opt/rh/devtoolset-10/root/usr/bin/make
