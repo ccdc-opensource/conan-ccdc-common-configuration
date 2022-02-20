@@ -103,14 +103,12 @@ ccdcsqlite3:enable_null_trim=True
 ccdcsqlite3:max_column=10000
 ccdcsqlite3:enable_column_metadata=True
 
+# Apply the same options for sqlite3, excluding enable_null_trim and max_column that were added to the ccdc recipe
 sqlite3:enable_explain_comments=True
-# We use fts for text search
 sqlite3:enable_fts3=True
 sqlite3:enable_fts4=True
 sqlite3:enable_fts5=True
 sqlite3:enable_json1=True
-# Unsure why we use this.
-sqlite3:max_column=10000
 sqlite3:enable_column_metadata=True
 
 # Enable zlib compression in protobuf
