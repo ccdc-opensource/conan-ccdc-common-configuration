@@ -101,6 +101,19 @@ ccdcsqlite3:enable_json1=True
 ccdcsqlite3:enable_null_trim=True
 # Unsure why we use this.
 ccdcsqlite3:max_column=10000
+ccdcsqlite3:enable_column_metadata=True
+
+sqlite3:enable_explain_comments=True
+# We use fts for text search
+sqlite3:enable_fts3=True
+sqlite3:enable_fts4=True
+sqlite3:enable_fts5=True
+sqlite3:enable_json1=True
+# enable_null_trim reduces the size of tables with lots of empty rows, like element presence counts
+sqlite3:enable_null_trim=True
+# Unsure why we use this.
+sqlite3:max_column=10000
+sqlite3:enable_column_metadata=True
 
 # Enable zlib compression in protobuf
 protobuf:with_zlib=True
