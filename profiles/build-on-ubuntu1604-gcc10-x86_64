@@ -1,0 +1,23 @@
+# This profile is used for building on a standard conan provided container
+[settings]
+arch=x86_64
+arch_build=x86_64
+
+os=Linux
+os_build=Linux
+# This requires a custom settings.xml which can be obtained by conan config install
+os.distro=Debian
+os_build.distro=Debian
+
+compiler=gcc
+compiler.libcxx=libstdc++11
+compiler.version=10
+compiler.cppstd=17
+
+build_type=Release
+
+[options]
+
+[build_requires]
+
+[env]
