@@ -14,6 +14,8 @@ qt:qtmacextras=False
 qt:qtx11extras=True
 qt:with_vulkan=True
 qt:qtwayland=True
+qt:with_bundled_xcb_xinput=True
+qt:with_egl=False
 
 # windows specific
 qt:qtwinextras=False
