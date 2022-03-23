@@ -29,16 +29,19 @@ winflexbison:build_type=Release
 # - we don't use static versions of LGPL libraries in our programs
 # - with the caveat that static versions of GPL and LGPL libraries can be used inside tools we use during the build
 libiconv:shared=False
-freetype:shared=False
 libpng:shared=False
 
 # Use dynamic libraries in general
+brotli:shared=True
 bzip2:shared=True
 cairo:shared=True
 ccdcsqlite3:shared=True
+double-conversion:shared=True
 expat:shared=True
 fontconfig:shared=True
 freetype:shared=True
+glib:shared=True
+harfbuzz:shared=True
 icu:shared=True
 inchi:shared=True
 jasper:shared=True
@@ -46,16 +49,32 @@ jbig:shared=True
 lexactivator:shared=True
 lexfloatclient:shared=True
 libcurl:shared=True
+libelf:shared=True
+libffi:shared=True
+libgettext:shared=True
 libjpeg:shared=True
+libmount:shared=True
+libselinux:shared=True
 libtiff:shared=True
 libuuid:shared=True
 libwebp:shared=True
 libxl:shared=True
 libxml2:shared=True
 mariadb-connector-c:shared=True
+nspr:shared=True
+nss:shared=True
 openscenegraph:shared=True
 openssl:shared=True
+opus:shared=True
+pcre:shared=True
+pcre2:shared=True
 protobuf:shared=True
+qt:shared=True
+qwt:shared=True
+sqlite3:shared=True
+vulkan-loader:shared=True
+wayland:shared=True
+xkbcommon:shared=True
 xz_utils:shared=True
 zlib:shared=True
 zstd:shared=True
@@ -82,6 +101,15 @@ ccdcsqlite3:enable_json1=True
 ccdcsqlite3:enable_null_trim=True
 # Unsure why we use this.
 ccdcsqlite3:max_column=10000
+ccdcsqlite3:enable_column_metadata=True
+
+# Apply the same options for sqlite3, excluding enable_null_trim and max_column that were added to the ccdc recipe
+sqlite3:enable_explain_comments=True
+sqlite3:enable_fts3=True
+sqlite3:enable_fts4=True
+sqlite3:enable_fts5=True
+sqlite3:enable_json1=True
+sqlite3:enable_column_metadata=True
 
 # Enable zlib compression in protobuf
 protobuf:with_zlib=True

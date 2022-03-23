@@ -1,0 +1,28 @@
+# This profile is used for building on Centos7 (older glibc)
+# it is different to the one for and ubuntu/debian circa 2018
+[settings]
+arch=x86_64
+arch_build=x86_64
+
+os=Linux
+os_build=Linux
+# This requires a custom settings.xml which can be obtained by conan config install
+os.distro=CentOS
+os_build.distro=CentOS
+
+compiler=gcc
+compiler.libcxx=libstdc++11
+compiler.version=10
+compiler.cppstd=17
+
+build_type=Release
+
+[options]
+
+[build_requires]
+
+[env]
+CC=/opt/rh/devtoolset-10/root/usr/bin/gcc
+CXX=/opt/rh/devtoolset-10/root/usr/bin/g++
+LD=/opt/rh/devtoolset-10/root/usr/bin/ld
+MAKE=/opt/rh/devtoolset-10/root/usr/bin/make
