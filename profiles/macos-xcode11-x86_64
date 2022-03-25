@@ -45,8 +45,7 @@ libxl:compiler.version=11.0
 libxl:compiler.cppstd=14
 
 [options]
-libcurl:with_openssl=False
-libcurl:darwin_ssl=True
+libcurl:with_ssl=darwinssl
 
 # Cairo configuration
 # Disable glib unless required
@@ -60,6 +59,9 @@ cairo:enable_fc=True
 # Expat is used by the ImageIO.framework. ImageIO is used by openscenegraph
 # ideally we should be able to use the system version on macos... but...
 expat:shared=False
+
+# libelf can not be built as shared library on non linux or windows platforms
+libelf:shared=False
 
 [build_requires]
 

@@ -41,6 +41,10 @@ cairo:enable_xlib=False
 cairo:enable_xlib_xrender=False
 cairo:enable_xcb=False
 
+# libelf can not be built as shared library on non linux or windows platforms
+# This is set to False in common-default-options
+libelf:shared=True
+
 [build_requires]
 
 [env]

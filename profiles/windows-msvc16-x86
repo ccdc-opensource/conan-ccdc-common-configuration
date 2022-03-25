@@ -47,6 +47,9 @@ libcurl:with_winssl=True
 # See the more extensive comment in common-default-options
 gtest:shared=False
 
+# libelf can not be built as shared library on non linux or windows platforms
+libelf:shared=False
+
 [build_requires]
 
 [env]
