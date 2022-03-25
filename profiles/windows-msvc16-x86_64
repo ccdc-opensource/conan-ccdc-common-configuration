@@ -1,6 +1,7 @@
 # This profile is used for building on Windows, with visual studio 2019
 include(default)
 include(common-default-options)
+include(qt5-options-windows)
 
 [settings]
 arch=x86_64
@@ -56,8 +57,9 @@ mariadb-connector-c:compiler=Visual Studio
 mariadb-connector-c:compiler.version=16
 
 [options]
-libcurl:with_openssl=False
-libcurl:with_winssl=True
+# Use native windows functions for ssl
+libcurl:with_ssl=schannel
+
 # Disable glib unless required
 cairo:enable_glib=False
 

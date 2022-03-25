@@ -1,10 +1,7 @@
 # This profile is used for building on Windows, with visual studio 2019
-include(default)
-include(common-default-options)
-
 [settings]
-arch=x86
-arch_build=x86
+arch=x86_64
+arch_build=x86_64
 
 os=Windows
 os_build=Windows
@@ -13,6 +10,9 @@ compiler=Visual Studio
 compiler.version=16
 compiler.toolset=v142
 compiler.cppstd=17
+compiler.runtime=MD
+
+build_type=Release
 
 # libtool 
 libtool:compiler=Visual Studio
@@ -22,6 +22,18 @@ libtool:compiler.toolset=v142
 winflexbison:compiler=Visual Studio
 winflexbison:compiler.version=16
 winflexbison:compiler.toolset=v142
+
+swig:compiler=Visual Studio
+swig:compiler.version=16
+swig:compiler.toolset=v142
+
+# Ninja compilation is affected by this issue
+# https://developercommunity.visualstudio.com/content/problem/93889/error-c2872-byte-ambiguous-symbol.html
+# Current solution is to back out into C++14
+ninja:compiler=Visual Studio
+ninja:compiler.version=16
+ninja:compiler.toolset=v142
+ninja:compiler.cppstd=14
 
 # openscenegraph uses mem_fun_ref, which was removed in C++17
 openscenegraph:compiler=Visual Studio
@@ -40,16 +52,10 @@ cmake:compiler.version=16
 cmake:compiler.toolset=v142
 cmake:compiler.cppstd=14
 
+mariadb-connector-c:compiler=Visual Studio
+mariadb-connector-c:compiler.version=16
+
 [options]
-libcurl:with_openssl=False
-libcurl:with_winssl=True
-
-# See the more extensive comment in common-default-options
-gtest:shared=False
-
-# libelf can not be built as shared library on non linux or windows platforms
-libelf:shared=False
-
 [build_requires]
 
 [env]
