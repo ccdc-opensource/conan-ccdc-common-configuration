@@ -9,6 +9,7 @@ b2:build_type=Release
 bison:build_type=Release
 cmake:build_type=Release
 flex:build_type=Release
+fontconfig:build_type=Release
 installbuilder:build_type=Release
 libtool:build_type=Release
 lzma_sdk:build_type=Release
