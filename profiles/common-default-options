@@ -47,8 +47,6 @@ icu:shared=True
 inchi:shared=True
 jasper:shared=True
 jbig:shared=True
-lexactivator:shared=True
-lexfloatclient:shared=True
 libcurl:shared=True
 libelf:shared=True
 libffi:shared=True
@@ -79,6 +77,10 @@ xkbcommon:shared=True
 xz_utils:shared=True
 zlib:shared=True
 zstd:shared=True
+
+# Explicitly use static cryptlex libraries
+lexactivator:shared=False
+lexfloatclient:shared=False
 
 # We have some functionality in project test libraries (think mathslib_test) that
 # requires access to singletons in the test infrastructure. This was possible with
