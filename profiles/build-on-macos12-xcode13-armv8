@@ -16,7 +16,7 @@ cmake:os.version=11.0
 
 compiler=apple-clang
 compiler.libcxx=libc++
-compiler.version=13.0
+compiler.version=13.1
 compiler.cppstd=17
 
 build_type=Release
@@ -24,8 +24,4 @@ build_type=Release
 [options]
 
 [build_requires]
-m4/1.4.19@
-bison:m4/1.4.19@
-qt:bison/3.7.6@
-qt:m4/1.4.19@
 [env]
