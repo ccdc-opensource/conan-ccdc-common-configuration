@@ -55,6 +55,7 @@ cairo:with_glib=False
 cairo:with_freetype=True
 # Use fontconfig
 cairo:with_fontconfig=True
+cairo:with_lzo=False
 
 # We prefer using static libraries for these packages on macos
 # Expat is used by the ImageIO.framework. ImageIO is used by openscenegraph
