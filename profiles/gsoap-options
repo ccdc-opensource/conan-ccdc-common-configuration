@@ -1,0 +1,9 @@
+# This profile is used for building gsoap
+[settings]
+
+[options]
+# Use static libraries across the board
+zlib:shared=False
+openssl:shared=False
+[build_requires]
+[env]
