@@ -32,15 +32,17 @@ libxl:compiler.cppstd=14
 [options]
 # Cairo configuration
 # Disable glib unless required
-cairo:enable_glib=False
+cairo:with_glib=False
 # Use freetype
-cairo:enable_ft=True
+cairo:with_freetype=True
 # Use fontconfig
-cairo:enable_fc=True
+cairo:with_fontconfig=True
 # Disable dependency on X Window System if possible
-cairo:enable_xlib=False
-cairo:enable_xlib_xrender=False
-cairo:enable_xcb=False
+cairo:with_xlib=False
+cairo:with_xlib_xrender=False
+cairo:with_xcb=False
+cairo:with_lzo=False
+cairo:with_opengl=False
 
 # Not using selinux support in GIO
 glib:with_selinux=False
@@ -50,6 +52,8 @@ glib:with_mount=False
 # libelf can not be built as shared library on non linux or windows platforms
 # This is set to False in common-default-options
 libelf:shared=True
+
+libuuid:shared=False
 
 [build_requires]
 
