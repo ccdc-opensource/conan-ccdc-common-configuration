@@ -142,7 +142,6 @@ libarchive:with_zstd=True
 # Avoid glib dependency in shipped libraries
 harfbuzz:with_glib=False
 mariadb-connector-c:with_iconv=False
-qt:with_iconv=False
 libarchive:with_iconv=False
 libxml2:iconv=False
 
