@@ -139,5 +139,8 @@ libarchive:with_zlib=True
 libarchive:with_bzip2=True
 libarchive:with_zstd=True
 
+# Avoid glib dependency in shipped libraries
+harfbuzz:with_glib=False
+
 [build_requires]
 [env]

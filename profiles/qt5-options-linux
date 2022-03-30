@@ -29,10 +29,10 @@ qt:opengl=desktop
 
 # 3rd party dependencies
 qt:openssl=True
-qt:with_dbus=True
+qt:with_dbus=False
 qt:with_doubleconversion=True
 qt:with_freetype=True
-qt:with_glib=True
+qt:with_glib=False
 qt:with_gstreamer=False
 qt:with_harfbuzz=True
 qt:with_libjpeg=libjpeg
