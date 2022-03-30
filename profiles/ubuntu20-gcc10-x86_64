@@ -1,4 +1,3 @@
-include(default)
 include(common-default-options)
 
 # This profile is used to differentiate between Centos7 (older glibc) and ubuntu/debian circa 2018

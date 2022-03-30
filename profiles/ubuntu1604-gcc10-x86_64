@@ -1,4 +1,3 @@
-include(default)
 include(common-default-options)
 include(qt5-options-linux)
 

@@ -1,5 +1,4 @@
 # This profile is used for building on Windows, with msys. Used only for some packages
-include(default)
 include(common-default-options)
 
 [settings]

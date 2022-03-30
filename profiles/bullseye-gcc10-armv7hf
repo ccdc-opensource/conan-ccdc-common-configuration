@@ -1,4 +1,3 @@
-include(default)
 include(common-default-options)
 
 # This profile is used for raspberry Pis using debian bullseye (late 2021)

@@ -1,5 +1,4 @@
 # This profile is used for building on Windows, with visual studio 2019
-include(default)
 include(common-default-options)
 include(qt5-options-windows)
 
