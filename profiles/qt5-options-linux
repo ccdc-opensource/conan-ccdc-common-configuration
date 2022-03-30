@@ -11,11 +11,11 @@ qt:commercial=True
 qt:qtmacextras=False
 
 # linux specific
-qt:qtx11extras=True
-qt:with_vulkan=True
 qt:qtwayland=True
+qt:qtx11extras=True
 qt:with_bundled_xcb_xinput=True
 qt:with_egl=False
+qt:with_vulkan=True
 
 # windows specific
 qt:qtwinextras=False
@@ -31,10 +31,12 @@ qt:opengl=desktop
 qt:openssl=True
 qt:with_dbus=False
 qt:with_doubleconversion=True
+qt:with_fontconfig=True
 qt:with_freetype=True
 qt:with_glib=False
 qt:with_gstreamer=False
 qt:with_harfbuzz=True
+qt:with_libalsa=False
 qt:with_libjpeg=libjpeg
 qt:with_libpng=True
 qt:with_mysql=False
