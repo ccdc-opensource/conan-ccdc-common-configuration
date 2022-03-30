@@ -1,0 +1,61 @@
+# This profile is used for building on Windows, with visual studio 2019
+[settings]
+arch=x86_64
+arch_build=x86_64
+
+os=Windows
+os_build=Windows
+
+compiler=Visual Studio
+compiler.version=17
+compiler.toolset=v143
+compiler.cppstd=17
+compiler.runtime=MD
+
+build_type=Release
+
+# libtool 
+libtool:compiler=Visual Studio
+libtool:compiler.version=17
+libtool:compiler.toolset=v143
+
+winflexbison:compiler=Visual Studio
+winflexbison:compiler.version=17
+winflexbison:compiler.toolset=v143
+
+swig:compiler=Visual Studio
+swig:compiler.version=17
+swig:compiler.toolset=v143
+
+# Ninja compilation is affected by this issue
+# https://developercommunity.visualstudio.com/content/problem/93889/error-c2872-byte-ambiguous-symbol.html
+# Current solution is to back out into C++14
+ninja:compiler=Visual Studio
+ninja:compiler.version=17
+ninja:compiler.toolset=v143
+ninja:compiler.cppstd=14
+
+# openscenegraph uses mem_fun_ref, which was removed in C++17
+openscenegraph:compiler=Visual Studio
+openscenegraph:compiler.version=17
+openscenegraph:compiler.toolset=v143
+openscenegraph:compiler.cppstd=14
+
+# libxl uses auto_ptr internally, which was removed in C++17
+libxl:compiler=Visual Studio
+libxl:compiler.version=17
+libxl:compiler.toolset=v143
+libxl:compiler.cppstd=14
+
+cmake:compiler=Visual Studio
+cmake:compiler.version=17
+cmake:compiler.toolset=v143
+cmake:compiler.cppstd=14
+
+mariadb-connector-c:compiler=Visual Studio
+mariadb-connector-c:compiler.version=17
+
+[options]
+[build_requires]
+
+[env]

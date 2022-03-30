@@ -1,0 +1,26 @@
+# This profile is used for building debug versions of libraries on Windows, with visual studio 2019
+include(common-default-options)
+include(windows-msvc17-x86_64)
+
+[settings]
+compiler.runtime=MDd
+
+# Use debug versions of C++ libraries (especially if they expose classes in std in their API)
+openscenegraph:compiler.runtime=MDd
+libxl:compiler.runtime=MDd
+
+# Use release versions of tooling though, no need to use debug versions of those
+libtool:compiler.runtime=MD
+cmake:compiler.runtime=MT
+winflexbison:compiler.runtime=MD
+swig:compiler.runtime=MD
+
+# Always use release version of mariadb-connector-c
+mariadb-connector-c:compiler.runtime=MD
+mariadb-connector-c:build_type=Release
+
+[options]
+
+[build_requires]
+
+[env]
