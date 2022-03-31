@@ -11,9 +11,11 @@ qt:commercial=True
 qt:qtmacextras=True
 
 # linux specific
-qt:qtx11extras=False
+# qt:qtx11extras=False
 qt:with_vulkan=False
 qt:qtwayland=False
+# qt:with_gstreamer=False
+# qt:with_openal=False
 
 # windows specific
 qt:qtwinextras=False
@@ -31,13 +33,11 @@ qt:with_dbus=False
 qt:with_doubleconversion=True
 qt:with_freetype=True
 qt:with_glib=False
-# qt:with_gstreamer=False
 qt:with_harfbuzz=True
 qt:with_libjpeg=libjpeg
 qt:with_libpng=True
 qt:with_mysql=False
 qt:with_odbc=False
-qt:with_openal=False
 qt:with_pcre2=True
 qt:with_pq=False
 qt:with_sqlite3=True
