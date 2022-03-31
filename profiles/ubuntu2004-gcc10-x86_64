@@ -1,5 +1,4 @@
 include(common-default-options)
-include(qt5-options-linux)
 
 # This profile is used to differentiate between Centos7 (older glibc) and ubuntu/debian circa 2018
 [settings]
@@ -51,6 +50,8 @@ glib:with_mount=False
 # libelf can not be built as shared library on non linux or windows platforms
 # This is set to False in common-default-options
 libelf:shared=True
+
+libuuid:shared=False
 
 [build_requires]
 

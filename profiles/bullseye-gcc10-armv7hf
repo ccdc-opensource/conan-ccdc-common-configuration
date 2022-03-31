@@ -42,9 +42,16 @@ cairo:with_xcb=False
 cairo:with_lzo=False
 cairo:with_opengl=False
 
+# Not using selinux support in GIO
+glib:with_selinux=False
+# Not using glib to mount drives
+glib:with_mount=False
+
 # libelf can not be built as shared library on non linux or windows platforms
 # This is set to False in common-default-options
 libelf:shared=True
+
+libuuid:shared=False
 
 [build_requires]
 

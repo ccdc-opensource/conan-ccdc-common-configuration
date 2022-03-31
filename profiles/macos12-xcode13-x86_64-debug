@@ -3,7 +3,13 @@ include(common-default-options)
 include(macos12-xcode13-x86_64)
 
 [settings]
+# The libraries below are only built in Release mode
+fontconfig:build_type=Release
 freetype:build_type=Release
+qt:build_type=Release
+qwt:build_type=Release
+rstatistics:build_type=Release
+
 
 [options]
 
