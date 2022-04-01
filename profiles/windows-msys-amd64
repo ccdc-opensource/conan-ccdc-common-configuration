@@ -15,6 +15,10 @@ compiler.libcxx=libstdc++11
 compiler.cppstd=17
 
 [options]
+
+# this option is not available on windows
+# mariadb-connector-c:with_iconv=False
+
 # See the more extensive comment in common-default-options
 gtest:shared=False
 

@@ -48,6 +48,8 @@ glib:with_selinux=False
 # Not using glib to mount drives
 glib:with_mount=False
 
+mariadb-connector-c:with_iconv=False
+
 # libelf can not be built as shared library on non linux or windows platforms
 # This is set to False in common-default-options
 libelf:shared=True

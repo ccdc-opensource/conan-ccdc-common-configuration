@@ -62,6 +62,9 @@ libcurl:with_ssl=schannel
 # Disable glib unless required
 cairo:with_glib=False
 
+# this option is not available on windows
+# mariadb-connector-c:with_iconv=False
+
 # See the more extensive comment in common-default-options
 gtest:shared=False
 
