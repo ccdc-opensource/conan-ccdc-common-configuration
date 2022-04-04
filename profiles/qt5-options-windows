@@ -75,7 +75,8 @@ qt:qtserialbus=False
 qt:qtserialport=False
 qt:qtspeech=False
 qt:qtsvg=True
-qt:qttools=False
+# required for ui plugins
+qt:qttools=True
 qt:qttranslations=False
 qt:qtvirtualkeyboard=False
 #required for qtwebengine
