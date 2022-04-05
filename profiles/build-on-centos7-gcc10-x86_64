@@ -20,6 +20,7 @@ build_type=Release
 [options]
 
 [build_requires]
+*:zlib/1.2.12
 
 [env]
 CC=/opt/rh/devtoolset-10/root/usr/bin/gcc

@@ -145,4 +145,5 @@ libarchive:with_iconv=False
 libxml2:iconv=False
 
 [build_requires]
+*:zlib/1.2.12
 [env]

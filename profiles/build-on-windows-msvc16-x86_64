@@ -57,5 +57,6 @@ mariadb-connector-c:compiler.version=16
 
 [options]
 [build_requires]
+*:zlib/1.2.12
 
 [env]
