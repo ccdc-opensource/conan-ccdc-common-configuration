@@ -8,39 +8,40 @@ arch_build=x86_64
 os=Macos
 # This is the minimum supported version, it should feed into the builds with the -mmacosx-version-min command line argument
 # See https://github.com/conan-io/conan/issues/2534
-os.version=11.0
+os.version=12.0
 os_build=Macos
 
 # We can override the minimum version for build tools such as cmake
 cmake:os=Macos
-cmake:os.version=11.0
+cmake:os.version=12.0
+
 compiler=apple-clang
 compiler.libcxx=libc++
-compiler.version=12.0
+compiler.version=14.0
 compiler.cppstd=17
 
 # povray's autotools can't configure boost in a way that works, switching to C++11
 povray:compiler=apple-clang
 povray:compiler.libcxx=libc++
-povray:compiler.version=12.0
+povray:compiler.version=14.0
 povray:compiler.cppstd=11
 
 # gperf uses the register storage class specifier, which was removed in C++17
 gperf:compiler=apple-clang
 gperf:compiler.libcxx=libc++
-gperf:compiler.version=12.0
+gperf:compiler.version=14.0
 gperf:compiler.cppstd=14
 
 # openscenegraph uses mem_fun_ref, which was removed in C++17
 openscenegraph:compiler=apple-clang
 openscenegraph:compiler.libcxx=libc++
-openscenegraph:compiler.version=12.0
+openscenegraph:compiler.version=14.0
 openscenegraph:compiler.cppstd=14
 
 # libxl uses auto_ptr internally, which was removed in C++17
 libxl:compiler=apple-clang
 libxl:compiler.libcxx=libc++
-libxl:compiler.version=12.0
+libxl:compiler.version=14.0
 libxl:compiler.cppstd=14
 
 [options]
