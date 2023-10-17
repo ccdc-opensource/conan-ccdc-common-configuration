@@ -8,7 +8,7 @@ arch_build=x86_64
 os=Macos
 # This is the minimum supported version, it should feed into the builds with the -mmacosx-version-min command line argument
 # See https://github.com/conan-io/conan/issues/2534
-os.version=10.15
+os.version=10.14
 os_build=Macos
 
 # We can override the minimum version for build tools such as cmake
