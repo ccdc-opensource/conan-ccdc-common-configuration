@@ -49,11 +49,11 @@ libcurl:darwin_ssl=True
 
 # Cairo configuration
 # Disable glib unless required
-cairo:enable_glib=False
+cairo:with_glib=False
 # Use freetype
-cairo:enable_ft=True
+cairo:with_freetype=True
 # Use fontconfig
-cairo:enable_fc=True
+cairo:with_fontconfig=True
 
 # We prefer using static libraries for these packages on macos
 # Expat is used by the ImageIO.framework. ImageIO is used by openscenegraph
