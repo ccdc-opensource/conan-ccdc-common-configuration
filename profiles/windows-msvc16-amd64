@@ -59,7 +59,7 @@ mariadb-connector-c:compiler.version=16
 libcurl:with_openssl=False
 libcurl:with_winssl=True
 # Disable glib unless required
-cairo:enable_glib=False
+cairo:with_glib=False
 
 # See the more extensive comment in common-default-options
 gtest:shared=False
