@@ -45,9 +45,6 @@ libxl:compiler.version=14.0
 libxl:compiler.cppstd=14
 
 [options]
-libcurl:with_openssl=False
-libcurl:darwin_ssl=True
-
 # Cairo configuration
 # Disable glib unless required
 cairo:with_glib=False
