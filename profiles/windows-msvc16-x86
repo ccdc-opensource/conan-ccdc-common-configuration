@@ -41,9 +41,6 @@ cmake:compiler.toolset=v142
 cmake:compiler.cppstd=14
 
 [options]
-libcurl:with_openssl=False
-libcurl:with_winssl=True
-
 # See the more extensive comment in common-default-options
 gtest:shared=False
 
