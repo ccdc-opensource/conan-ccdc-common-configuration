@@ -46,11 +46,11 @@ libxl:compiler.cppstd=14
 [options]
 # Cairo configuration
 # Disable glib unless required
-cairo:with_glib=False
+cairo:enable_glib=False
 # Use freetype
-cairo:with_freetype=True
+cairo:enable_ft=True
 # Use fontconfig
-cairo:with_fontconfig=True
+cairo:enable_fc=True
 
 # We prefer using static libraries for these packages on macos
 # Expat is used by the ImageIO.framework. ImageIO is used by openscenegraph

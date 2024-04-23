@@ -57,7 +57,7 @@ mariadb-connector-c:compiler.version=16
 
 [options]
 # Disable glib unless required
-cairo:with_glib=False
+cairo:enable_glib=False
 
 # See the more extensive comment in common-default-options
 gtest:shared=False
