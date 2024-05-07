@@ -99,8 +99,5 @@ libarchive:with_zlib=True
 libarchive:with_bzip2=True
 libarchive:with_zstd=True
 
-# Not sure about this ...
-zlib:minizip=deprecated
-
 [build_requires]
 [env]
