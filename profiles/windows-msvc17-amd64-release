@@ -7,9 +7,6 @@ include(windows-msvc17-amd64)
 # Build everything in release mode
 compiler.runtime=MD
 
-# Use release version of tooling
-cmake:compiler.runtime=MT
-
 [options]
 
 [build_requires]
