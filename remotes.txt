@@ -2,3 +2,5 @@ ccdc-3rdparty-conan https://artifactory.ccdc.cam.ac.uk/artifactory/api/conan/ccd
 ccdc-3rdparty-conan-testing https://artifactory.ccdc.cam.ac.uk/artifactory/api/conan/ccdc-3rdparty-conan-testing True
 public-conan-center https://artifactory.ccdc.cam.ac.uk/artifactory/api/conan/public-conan-center True
 public-conan-bincrafters https://artifactory.ccdc.cam.ac.uk/artifactory/api/conan/public-conan-bincrafters True
+public-conan-center-1 https://center.conan.io True
+public-conan-center-2 https://center2.conan.io True
