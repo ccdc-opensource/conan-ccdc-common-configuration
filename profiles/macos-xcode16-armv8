@@ -1,0 +1,64 @@
+include(default)
+include(common-default-options)
+
+# This profile is used for building on MacOs
+[settings]
+# The choice of armv8 is deliberate. Ninja build crashes if 8.3 is used
+arch=armv8
+arch_build=armv8
+os=Macos
+# This is the minimum supported version, it should feed into the builds with the -mmacosx-version-min command line argument
+# See https://github.com/conan-io/conan/issues/2534
+os.version=13.0
+os_build=Macos
+
+# We can override the minimum version for build tools such as cmake
+cmake:os=Macos
+cmake:os.version=13.0
+
+compiler=apple-clang
+compiler.libcxx=libc++
+compiler.version=16.0
+compiler.cppstd=17
+
+# povray's autotools can't configure boost in a way that works, switching to C++11
+povray:compiler=apple-clang
+povray:compiler.libcxx=libc++
+povray:compiler.version=16.0
+povray:compiler.cppstd=11
+
+# gperf uses the register storage class specifier, which was removed in C++17
+gperf:compiler=apple-clang
+gperf:compiler.libcxx=libc++
+gperf:compiler.version=16.0
+gperf:compiler.cppstd=14
+
+# openscenegraph uses mem_fun_ref, which was removed in C++17
+openscenegraph:compiler=apple-clang
+openscenegraph:compiler.libcxx=libc++
+openscenegraph:compiler.version=16.0
+openscenegraph:compiler.cppstd=14
+
+# libxl uses auto_ptr internally, which was removed in C++17
+libxl:compiler=apple-clang
+libxl:compiler.libcxx=libc++
+libxl:compiler.version=16.0
+libxl:compiler.cppstd=14
+
+[options]
+# Cairo configuration
+# Disable glib unless required
+cairo:enable_glib=False
+# Use freetype
+cairo:enable_ft=True
+# Use fontconfig
+cairo:enable_fc=True
+
+# We prefer using static libraries for these packages on macos
+# Expat is used by the ImageIO.framework. ImageIO is used by openscenegraph
+# ideally we should be able to use the system version on macos... but...
+expat:shared=False
+
+[build_requires]
+
+[env]
