@@ -7,6 +7,4 @@ include(windows-msys-amd64)
 
 [options]
 
-[build_requires]
 
-[env]

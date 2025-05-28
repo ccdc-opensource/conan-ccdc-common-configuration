@@ -58,6 +58,4 @@ cairo:enable_fc=True
 # ideally we should be able to use the system version on macos... but...
 expat:shared=False
 
-[build_requires]
 
-[env]

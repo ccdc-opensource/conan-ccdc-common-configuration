@@ -44,6 +44,4 @@ cmake:compiler.cppstd=14
 # See the more extensive comment in common-default-options
 gtest:shared=False
 
-[build_requires]
 
-[env]

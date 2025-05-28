@@ -5,5 +5,3 @@
 lexactivator:shared=False
 lexfloatclient:shared=False
 
-[build_requires]
-[env]

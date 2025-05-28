@@ -62,6 +62,4 @@ cairo:enable_glib=False
 # See the more extensive comment in common-default-options
 gtest:shared=False
 
-[build_requires]
 
-[env]

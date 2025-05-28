@@ -15,6 +15,4 @@ cmake:compiler.runtime=MT
 
 [options]
 
-[build_requires]
 
-[env]

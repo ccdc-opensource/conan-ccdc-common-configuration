@@ -41,8 +41,6 @@ cairo:enable_xlib=False
 cairo:enable_xlib_xrender=False
 cairo:enable_xcb=False
 
-[build_requires]
 
-[env]
 CC=/opt/rh/devtoolset-9/root/usr/bin/gcc
 CXX=/opt/rh/devtoolset-9/root/usr/bin/g++
