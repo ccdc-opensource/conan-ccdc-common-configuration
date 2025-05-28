@@ -55,5 +55,3 @@ boost:without_timer=True
 boost:without_type_erasure=True
 boost:without_wave=True
 
-[build_requires]
-[env]

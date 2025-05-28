@@ -9,6 +9,4 @@ compiler.runtime=MD
 
 [options]
 
-[build_requires]
 
-[env]

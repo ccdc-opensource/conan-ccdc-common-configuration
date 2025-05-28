@@ -99,5 +99,3 @@ libarchive:with_zlib=True
 libarchive:with_bzip2=True
 libarchive:with_zstd=True
 
-[build_requires]
-[env]

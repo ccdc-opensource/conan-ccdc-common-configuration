@@ -27,6 +27,4 @@ mariadb-connector-c:build_type=Release
 
 [options]
 
-[build_requires]
 
-[env]
