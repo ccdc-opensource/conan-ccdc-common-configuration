@@ -1,5 +1,5 @@
 include(default)
-include(common-default-options)
+include(common-default-options-2)
 
 # This profile is used for building on MacOs
 [settings]
