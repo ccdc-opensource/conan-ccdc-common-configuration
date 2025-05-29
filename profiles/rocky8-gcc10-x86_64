@@ -39,6 +39,6 @@ cairo:enable_xlib=False
 cairo:enable_xlib_xrender=False
 cairo:enable_xcb=False
 
-
+[env]
 CC=/opt/rh/gcc-toolset-10/root/usr/bin/gcc
 CXX=/opt/rh/gcc-toolset-10/root/usr/bin/g++
