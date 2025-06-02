@@ -9,9 +9,8 @@ arch_build=x86_64
 os=Windows
 os_build=Windows
 
-compiler=Visual Studio
-compiler.version=17
-compiler.toolset=v143
+compiler=msvc
+compiler.version=194
 compiler.cppstd=20
 
 # openscenegraph uses mem_fun_ref, which was removed in C++17
