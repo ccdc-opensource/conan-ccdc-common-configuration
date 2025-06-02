@@ -7,19 +7,20 @@ include(windows-msvc16-amd64-2)
 compiler.runtime=MDd
 
 # Use debug versions of C++ libraries (especially if they expose classes in std in their API)
-openscenegraph:compiler.runtime=MDd
-libxl:compiler.runtime=MDd
+openscenegraph:compiler.runtime=dynamic
+openscenegraph:compiler.runtime_type=Debug
+libxl:compiler.runtime=dynamic
+libxl:compiler.runtime_type=Debug
 
 # Use release versions of tooling though, no need to use debug versions of those
-libtool:compiler.runtime=MD
-cmake:compiler.runtime=MT
-winflexbison:compiler.runtime=MD
-swig:compiler.runtime=MD
-
-# Always use release version of mariadb-connector-c
-mariadb-connector-c:compiler.runtime=MD
-mariadb-connector-c:build_type=Release
+libtool:compiler.runtime=dynamic
+libtool:compiler.runtime_type=Release
+cmake:compiler.runtime=static
+cmake:compiler.runtime_type=Release
+winflexbison:compiler.runtime=dynamic
+winflexbison:compiler.runtime_type=Release
+swig:compiler.runtime=dynamic
+swig:compiler.runtime_type=Release
 
 [options]
-
 

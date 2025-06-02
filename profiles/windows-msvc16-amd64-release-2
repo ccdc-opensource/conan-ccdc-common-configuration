@@ -5,14 +5,20 @@ include(windows-msvc16-amd64-2)
 
 [settings]
 # Build everything in release mode
-compiler.runtime=MD
-openscenegraph:compiler.runtime=MD
+compiler.runtime=dynamic
+compiler.runtime_type=Release
+openscenegraph:compiler.runtime=dynamic
+openscenegraph:compiler.runtime_type=Release
 
 # Use release version of tooling
-libtool:compiler.runtime=MD
-libxl:compiler.runtime=MD
-cmake:compiler.runtime=MT
-swig:compiler.runtime=MD
+libtool:compiler.runtime=dynamic
+libtool:compiler.runtime_type=Release
+libxl:compiler.runtime=dynamic
+libxl:compiler.runtime_type=Release
+cmake:compiler.runtime=static
+cmake:compiler.runtime_type=Release
+swig:compiler.runtime=dynamic
+swig:compiler.runtime_type=Release
 
 cairo:build_type=Release
 freetype:build_type=Release
@@ -21,10 +27,5 @@ libxl:build_type=Release
 openscenegraph:build_type=Release
 pixman:build_type=Release
 
-# Always use release version of mariadb-connector-c
-mariadb-connector-c:compiler.runtime=MD
-mariadb-connector-c:build_type=Release
-
 [options]
-
 
