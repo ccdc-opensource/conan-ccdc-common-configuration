@@ -1,12 +1,9 @@
-# This profile is used for building debug versions of libraries on Windows, with visual studio 2019
+# This profile is used for building release versions of libraries on MacOS, with xcode 16
 include(default)
 include(common-default-options-2)
-include(macos-xcode14-x86_64-2)
+include(macos-xcode16-x86_64-2)
 
 [settings]
-# The libraries below are only built in Release and Debug mode.
-# This profile is used by non debug builds. By forcing release mode on these projects here, we ensure
-# that MinSizeRel and RelWithDebInfo builds use Release builds of the libraries below
 cairo:build_type=Release
 freetype:build_type=Release
 gsoap:build_type=Release
