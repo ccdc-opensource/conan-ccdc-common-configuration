@@ -1,0 +1,11 @@
+# This profile is used for building debug versions of libraries on MacOS, with xcode 16
+include(default)
+include(common-default-options-2)
+include(macos-xcode16-x86_64-2)
+
+[settings]
+freetype:build_type=Release
+
+[options]
+
+

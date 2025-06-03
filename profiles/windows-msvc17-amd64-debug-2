@@ -1,0 +1,21 @@
+# This profile is used for building debug versions of libraries on Windows, with visual studio 2022
+include(default)
+include(common-default-options-2)
+include(windows-msvc17-amd64-2)
+
+[settings]
+compiler.runtime=dynamic
+compiler.runtime_type=Debug
+
+# Use release versions of tooling though, no need to use debug versions of those
+libtool:compiler.runtime=dynamic
+libtool:compiler.runtime_type=Release
+cmake:compiler.runtime=static
+cmake:compiler.runtime_type=Release
+winflexbison:compiler.runtime=dynamic
+winflexbison:compiler.runtime_type=Release
+swig:compiler.runtime=dynamic
+swig:compiler.runtime_type=Release
+
+[options]
+

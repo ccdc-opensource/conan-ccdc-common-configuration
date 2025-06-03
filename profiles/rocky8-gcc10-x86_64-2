@@ -1,46 +1,45 @@
 include(default)
-include(common-default-options)
+include(common-default-options-2)
 
-# This profile is used to differentiate between Centos7 (older glibc) and ubuntu/debian circa 2018
+# This profile is for rocky linux 8 as an immediate successor to centos 7 for build systems
 [settings]
 arch=x86_64
 arch_build=x86_64
 
 os=Linux
 os_build=Linux
-# This requires a custom settings.xml which can be obtained by conan config install
-os.distro=CentOS
 
 compiler=gcc
 compiler.libcxx=libstdc++11
-compiler.version=9
+compiler.version=10
 compiler.cppstd=17
 
 # openscenegraph uses mem_fun_ref, which was removed in C++17
 openscenegraph:compiler=gcc
 openscenegraph:compiler.libcxx=libstdc++11
-openscenegraph:compiler.version=9
+openscenegraph:compiler.version=10
 openscenegraph:compiler.cppstd=14
 
 # libxl uses auto_ptr internally, which was removed in C++17
 libxl:compiler=gcc
 libxl:compiler.libcxx=libstdc++11
-libxl:compiler.version=9
+libxl:compiler.version=10
 libxl:compiler.cppstd=14
 
 [options]
 # Cairo configuration
 # Disable glib unless required
-cairo:enable_glib=False
+cairo/*:enable_glib=False
 # Use freetype
-cairo:enable_ft=True
+cairo/*:enable_ft=True
 # Use fontconfig
-cairo:enable_fc=True
+cairo/*:enable_fc=True
 # Disable dependency on X Window System if possible
-cairo:enable_xlib=False
-cairo:enable_xlib_xrender=False
-cairo:enable_xcb=False
+cairo/*:enable_xlib=False
+cairo/*:enable_xlib_xrender=False
+cairo/*:enable_xcb=False
 
-[env]
-CC=/opt/rh/devtoolset-9/root/usr/bin/gcc
-CXX=/opt/rh/devtoolset-9/root/usr/bin/g++
+
+[buildenv]
+CC=/opt/rh/gcc-toolset-10/root/usr/bin/gcc
+CXX=/opt/rh/gcc-toolset-10/root/usr/bin/g++

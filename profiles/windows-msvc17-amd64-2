@@ -1,0 +1,29 @@
+# This profile is used for building on Windows, with visual studio 2022
+include(default)
+include(common-default-options-2)
+
+[settings]
+arch=x86_64
+arch_build=x86_64
+
+os=Windows
+os_build=Windows
+
+compiler=msvc
+compiler.version=194
+compiler.cppstd=20
+
+# openscenegraph uses mem_fun_ref, which was removed in C++17
+openscenegraph:compiler.cppstd=14
+
+# libxl uses auto_ptr internally, which was removed in C++17
+libxl:compiler.cppstd=14
+
+[options]
+# Disable glib unless required
+cairo/*:enable_glib=False
+
+# See the more extensive comment in common-default-options
+gtest/*:shared=False
+
+

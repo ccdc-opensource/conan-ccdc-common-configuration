@@ -1,0 +1,101 @@
+# This profile is used for setting common options that are used by C++ software
+[settings]
+
+# Use tools in Release mode only
+7zip:build_type=Release
+autoconf:build_type=Release
+automake:build_type=Release
+b2:build_type=Release
+bison:build_type=Release
+cmake:build_type=Release
+flex:build_type=Release
+installbuilder:build_type=Release
+libtool:build_type=Release
+lzma_sdk:build_type=Release
+m4:build_type=Release
+make:build_type=Release
+msys2:build_type=Release
+nasm:build_type=Release
+ninja:build_type=Release
+rstatistics:build_type=Release
+strawberryperl:build_type=Release
+swig:build_type=Release
+winflexbison:build_type=Release
+
+[options]
+# Packages using these libraries like autoconf are having trouble
+# finding them when running in autotools. 
+# This list must be vetted so that:
+# - we don't use static versions of LGPL libraries in our programs
+# - with the caveat that static versions of GPL and LGPL libraries can be used inside tools we use during the build
+libiconv/*:shared=False
+freetype/*:shared=False
+libpng/*:shared=False
+
+# Use dynamic libraries in general
+bzip2/*:shared=True
+cairo/*:shared=True
+ccdcsqlite3/*:shared=True
+expat/*:shared=True
+fontconfig/*:shared=True
+freetype/*:shared=True
+inchi/*:shared=True
+jasper/*:shared=True
+jbig/*:shared=True
+lexactivator/*:shared=True
+lexfloatclient/*:shared=True
+libcurl/*:shared=True
+libjpeg/*:shared=True
+libtiff/*:shared=True
+libuuid/*:shared=True
+libwebp/*:shared=True
+libxl/*:shared=True
+libxml2/*:shared=True
+libxslt/*:shared=True
+mariadb-connector-c/*:shared=True
+openscenegraph/*:shared=True
+openssl/*:shared=True
+protobuf/*:shared=True
+xz_utils/*:shared=True
+zlib/*:shared=True
+zstd/*:shared=True
+
+# We have some functionality in project test libraries (think mathslib_test) that
+# requires access to singletons in the test infrastructure. This was possible with
+# ccdc's homegrown test toolkit but is no longer easy to do with googletest.
+# Googletest's philosophy is that tests must be entirely defined in the testsuite and
+# no shared libraries should be used when accessing testsuite related data.
+# The way we make things work is that we use shared libraries on linux and macos
+# and static googletest libraries on windows as this is the only way to keep
+# a single copy of the singletons in question
+gtest/*:shared=True
+libarchive/*:shared=True
+
+# This helps debugging queries at the cost of some extra space
+ccdcsqlite3/*:enable_explain_comments=True
+# We use fts for text search
+ccdcsqlite3/*:enable_fts3=True
+ccdcsqlite3/*:enable_fts4=True
+ccdcsqlite3/*:enable_fts5=True
+ccdcsqlite3/*:enable_json1=True
+# enable_null_trim reduces the size of tables with lots of empty rows, like element presence counts
+ccdcsqlite3/*:enable_null_trim=True
+# Unsure why we use this.
+ccdcsqlite3/*:max_column=10000
+
+# Enable zlib compression in protobuf
+protobuf/*:with_zlib=True
+
+# Fix crash when two libraries using csdprotobufs are linked together
+# https://stackoverflow.com/questions/37051635/several-shared-object-using-same-proto-leading-the-the-error-file-already-exist
+csdprotobufs/*:shared=True
+cqlprotobufs/*:shared=True
+
+# Header only boost version
+boost/*:header_only=True
+
+# Enable compression libraries for libarchive
+libarchive/*:with_zlib=True
+libarchive/*:with_bzip2=True
+libarchive/*:with_zstd=True
+

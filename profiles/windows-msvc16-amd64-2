@@ -1,0 +1,36 @@
+# This profile is used for building on Windows, with visual studio 2019
+include(default)
+include(common-default-options-2)
+
+[settings]
+arch=x86_64
+arch_build=x86_64
+
+os=Windows
+os_build=Windows
+
+compiler=msvc
+compiler.version=192
+compiler.cppstd=17
+
+# Ninja compilation is affected by this issue
+# https://developercommunity.visualstudio.com/content/problem/93889/error-c2872-byte-ambiguous-symbol.html
+# Current solution is to back out into C++14
+ninja:compiler.cppstd=14
+
+# openscenegraph uses mem_fun_ref, which was removed in C++17
+openscenegraph:compiler.cppstd=14
+
+# libxl uses auto_ptr internally, which was removed in C++17
+libxl:compiler.cppstd=14
+
+cmake:compiler.cppstd=14
+
+[options]
+# Disable glib unless required
+cairo/*:enable_glib=False
+
+# See the more extensive comment in common-default-options
+gtest/*:shared=False
+
+
