@@ -11,13 +11,15 @@ os_build=Windows
 
 compiler=msvc
 compiler.version=194
-compiler.cppstd=20
+compiler.cppstd=17
 
 # openscenegraph uses mem_fun_ref, which was removed in C++17
 openscenegraph:compiler.cppstd=14
 
 # libxl uses auto_ptr internally, which was removed in C++17
 libxl:compiler.cppstd=14
+
+cmake:compiler.cppstd=14
 
 [options]
 # Disable glib unless required
