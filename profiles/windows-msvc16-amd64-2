@@ -29,6 +29,7 @@ cmake:compiler.cppstd=14
 [options]
 # Disable glib unless required
 cairo/*:enable_glib=False
+cairo/*:with_glib=False
 
 # See the more extensive comment in common-default-options
 gtest/*:shared=False
