@@ -49,3 +49,7 @@ cairo/*:with_xcb=False
 [buildenv]
 CC=/opt/rh/gcc-toolset-10/root/usr/bin/gcc
 CXX=/opt/rh/gcc-toolset-10/root/usr/bin/g++
+
+# Needed to build eg. xorg/system
+[conf]
+tools.system.package_manager:mode=install
