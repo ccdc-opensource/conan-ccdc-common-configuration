@@ -14,6 +14,11 @@ compiler.version=16
 compiler.toolset=v142
 compiler.cppstd=17
 
+# csdprotobuf
+# We have to build csdprotobuf with vs2022 as the github runner with vs2019
+# is no longer available from July 2025.
+csdprotobuf:compiler.version=17
+
 # libtool 
 libtool:compiler=Visual Studio
 libtool:compiler.version=16
