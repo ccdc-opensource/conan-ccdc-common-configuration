@@ -18,7 +18,7 @@ compiler.cppstd=17
 # We have to build csdprotobufs with vs2022 as the github runner with vs2019
 # is no longer available from July 2025.
 csdprotobufs:compiler.version=17
-csdprotobufs:cppstd=20
+csdprotobufs:compiler.cppstd=20
 
 # libtool 
 libtool:compiler=Visual Studio
