@@ -20,7 +20,7 @@ compiler.cppstd=17
 # to the rest of this build, so override the package metadata that conan is searching for
 csdprotobufs:compiler.version=17
 csdprotobufs:compiler.cppstd=20
-csdprotobufs:compiler.toolset=
+csdprotobufs:compiler.toolset=None
 
 # libtool 
 libtool:compiler=Visual Studio
