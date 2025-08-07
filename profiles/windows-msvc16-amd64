@@ -16,9 +16,11 @@ compiler.cppstd=17
 
 # csdprotobufs
 # We have to build csdprotobufs with vs2022 as the github runner with vs2019
-# is no longer available from July 2025.
+# is no longer available from July 2025. This is a slightly different configuration
+# to the rest of this build, so override the package metadata that conan is searching for
 csdprotobufs:compiler.version=17
 csdprotobufs:compiler.cppstd=20
+csdprotobufs:compiler.toolset=None
 
 # libtool 
 libtool:compiler=Visual Studio
