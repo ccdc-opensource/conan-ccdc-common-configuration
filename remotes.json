@@ -1,31 +1,6 @@
 {
  "remotes": [
   {
-   "name": "ccdc-3rdparty-conan",
-   "url": "https://artifactory.ccdc.cam.ac.uk/artifactory/api/conan/ccdc-3rdparty-conan",
-   "verify_ssl": true
-  },
-  {
-   "name": "ccdc-3rdparty-conan-testing",
-   "url": "https://artifactory.ccdc.cam.ac.uk/artifactory/api/conan/ccdc-3rdparty-conan-testing",
-   "verify_ssl": true
-  },
-  {
-   "name": "public-conan-center",
-   "url": "https://artifactory.ccdc.cam.ac.uk/artifactory/api/conan/public-conan-center",
-   "verify_ssl": true
-  },
-  {
-   "name": "public-conan-bincrafters",
-   "url": "https://artifactory.ccdc.cam.ac.uk/artifactory/api/conan/public-conan-bincrafters",
-   "verify_ssl": true
-  },
-  {
-   "name": "public-conan-center-1",
-   "url": "https://center.conan.io",
-   "verify_ssl": true
-  },
-  {
    "name": "public-conan-center-2",
    "url": "https://center2.conan.io",
    "verify_ssl": true
