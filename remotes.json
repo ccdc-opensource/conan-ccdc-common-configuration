@@ -1,13 +1,13 @@
 {
  "remotes": [
   {
-   "name": "public-conan-center-2",
-   "url": "https://center2.conan.io",
+   "name": "ccdc-3rdparty-conan-2",
+   "url": "https://proget.ccdc.cam.ac.uk/conan/ccdc-3rdparty-conan",
    "verify_ssl": true
   },
   {
-   "name": "ccdc-3rdparty-conan-2",
-   "url": "https://proget.ccdc.cam.ac.uk/conan/ccdc-3rdparty-conan",
+   "name": "public-conan-center-2",
+   "url": "https://center2.conan.io",
    "verify_ssl": true
   }
  ]
