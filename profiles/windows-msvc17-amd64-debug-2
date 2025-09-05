@@ -17,5 +17,46 @@ winflexbison:compiler.runtime_type=Release
 swig:compiler.runtime=dynamic
 swig:compiler.runtime_type=Release
 
+
+# Library dependencies
+# by changing the compiler.runtime and build_type of groups of these libraries in a
+# way that clusters of them work consistently, you can use debug versions of these
+# third party libraries
+libxl:compiler.runtime=dynamic
+libxl:compiler.runtime_type=Release
+libxl:build_type=Release
+
+freetype:compiler.runtime=dynamic
+freetype:compiler.runtime_type=Release
+freetype:build_type=Release
+
+bzip2:compiler.runtime=dynamic
+bzip2:compiler.runtime_type=Release
+bzip2:build_type=Release
+
+libiconv:compiler.runtime=dynamic
+libiconv:compiler.runtime_type=Release
+libiconv:build_type=Release
+
+zstd:compiler.runtime=dynamic
+zstd:compiler.runtime_type=Release
+zstd:build_type=Release
+
+libarchive:compiler.runtime=dynamic
+libarchive:compiler.runtime_type=Release
+libarchive:build_type=Release
+
+inchi:compiler.runtime=dynamic
+inchi:compiler.runtime_type=Release
+inchi:build_type=Release
+
+ccdcsqlite3:compiler.runtime=dynamic
+ccdcsqlite3:compiler.runtime_type=Release
+ccdcsqlite3:build_type=Release
+
+zlib:compiler.runtime=dynamic
+zlib:compiler.runtime_type=Release
+zlib:build_type=Release
+
 [options]
 
