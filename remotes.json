@@ -14,6 +14,11 @@
    "name": "ccdc-3rdparty-conan",
    "url": "https://artifactory.ccdc.cam.ac.uk/artifactory/api/conan/ccdc-3rdparty-conan",
    "verify_ssl": true
+  },
+  {
+   "name": "public-conan-center-1",
+   "url": "https://center.conan.io",
+   "verify_ssl": true
   }
  ]
 }
