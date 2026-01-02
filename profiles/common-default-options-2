@@ -33,6 +33,7 @@ freetype/*:shared=False
 libpng/*:shared=False
 
 # Use dynamic libraries in general
+abseil/*:shared=True
 bzip2/*:shared=True
 cairo/*:shared=True
 ccdcsqlite3/*:shared=True
