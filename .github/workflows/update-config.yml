@@ -1,0 +1,24 @@
+# Update conan configuration on push
+name: Update Conan Configuration
+on:
+  push:
+
+jobs:
+  update-conan-config:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v6
+
+      - name: Create config zip
+        run: |
+          cd "${GITHUB_WORKSPACE}"
+          zip -r common-3rdparty-config.zip .
+
+      - name: Upload config zip
+        uses: ccdc-confidential/github-actions/upload-proget@v7
+        with:
+          feed: ccdc-conan-metadata
+          token: ${{ secrets.PROGET_CCDC_CONAN_METADATA_READ_WRITE }}
+          target-path: "./"
+          file: common-3rdparty-config.zip
